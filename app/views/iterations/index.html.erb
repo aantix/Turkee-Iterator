@@ -1,39 +1,49 @@
-<h1>Vote for your favorite.</h1>
+<div class="span-11">
+  <h1>Vote for your favorite.</h1>
 
-<table>
+  <table>
+    <tr>
+      <th>Submission</th>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th># Votes</th>
+    </tr>
 
-<% @iterations.each do |iteration| %>
-  <tr>
-    <td><%=h iteration.value %></td>
-    <td>
-      <% turkee_form_for IterationVote.new do |f|%>
-        <%= f.hidden_field :iteration_id, :value => iteration.id %>
-        <%= f.submit 'Vote!' %>
-      <% end %>
-    </td>
-    <td>
-      <%= link_to_function('Copy',
-                           "set_text('iteration_value',
-                           '#{CGI.escapeHTML(iteration.value)}')") %>
-    </td>
-    <td><%=h iteration.iteration_votes.count %></td>
-  </tr>
-<% end %>
-</table>
+    <% @iterations.each do |iteration| %>
+        <tr>
+          <td><%= h iteration.value %></td>
+          <td>
+            <% turkee_form_for IterationVote.new do |f| %>
+                <%= f.hidden_field :iteration_id, :value => iteration.id %>
+                <%= f.submit 'Vote!' %>
+            <% end %>
+          </td>
+          <td>
+            <%= link_to_function('Copy', "set_text('iteration_value','#{CGI.escapeHTML(iteration.value)}')") %>
+          </td>
+          <td><%= h iteration.iteration_votes.count %></td>
+        </tr>
+    <% end %>
+  </table>
+</div>
 
-<br />
+<div class="span-2">
+  <h3>- OR -</h3>
+</div>
 
-<h1>Create your own</h1>
-For a chance to earn an additional bonus, submit your own creation to be voted on.
+<div class="span-11 last">
+  <h1>Create your own</h1>
+  For a chance to earn an additional bonus, submit your own creation to be voted on.
 
-<% turkee_form_for(@iteration) do |f| %>
-  <%= f.error_messages %>
+  <% turkee_form_for(@iteration) do |f| %>
+      <%= f.error_messages %>
 
-  <p>
-    <%= f.label :value %><br />
-    <%= f.text_area :value %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+      <p>
+        <%= f.text_area :value %>
+      </p>
+
+      <p>
+        <%= f.submit 'Create' %>
+      </p>
+  <% end %>
+</div>
