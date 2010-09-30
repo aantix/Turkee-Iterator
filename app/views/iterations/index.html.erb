@@ -1,4 +1,4 @@
-<h1>Vote for your favorite</h1>
+<h1>Vote for your favorite.</h1>
 
 <table>
 
@@ -10,6 +10,11 @@
         <%= f.hidden_field :iteration_id, :value => iteration.id %>
         <%= f.submit 'Vote!' %>
       <% end %>
+    </td>
+    <td>
+      <%= link_to_function('Copy',
+                           "set_text('iteration_value',
+                           '#{CGI.escapeHTML(iteration.value)}')") %>
     </td>
     <td><%=h iteration.iteration_votes.count %></td>
   </tr>
