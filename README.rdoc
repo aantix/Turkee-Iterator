@@ -1,0 +1,9 @@
+== Description
+
+TurkeeIterator is a demo application for the Turkee gem.
+# More to come.
+
+
+== Copyright
+
+Copyright (c) 2010 Jim Jones. See LICENSE for details.

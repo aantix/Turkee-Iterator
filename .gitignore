@@ -1,0 +1,6 @@
+public/artwork
+public/system
+log/*.log
+tmp/**/*
+doc/api
+doc/app
