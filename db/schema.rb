@@ -9,7 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100930145945) do
+ActiveRecord::Schema.define(:version => 20100930150102) do
+
+  create_table "iteration_votes", :force => true do |t|
+    t.integer  "iteration_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "iterations", :force => true do |t|
     t.string   "value"
