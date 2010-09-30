@@ -1,0 +1,34 @@
+<h1>Vote for your favorite</h1>
+
+<table>
+
+<% @iterations.each do |iteration| %>
+  <tr>
+    <td><%=h iteration.value %></td>
+    <td>
+      <% turkee_form_for IterationVote.new do |f|%>
+        <%= f.hidden_field :iteration_id, :value => iteration.id %>
+        <%= f.submit 'Vote!' %>
+      <% end %>
+    </td>
+    <td><%=h iteration.iteration_votes.count %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<h1>Create your own</h1>
+For a chance to earn an additional bonus, submit your own creation to be voted on.
+
+<% turkee_form_for(@iteration) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
