@@ -699,3 +699,616 @@ Rendering iterations/index
   [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `iteration_votes` WHERE (`iteration_votes`.iteration_id = 2) [0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `iteration_votes` WHERE (`iteration_votes`.iteration_id = 3) [0m
 Completed in 390ms (View: 141, DB: 244) | 200 OK [http://localhost/iterations/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+***** #<ActionController::Request:0x10343ec30 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9"}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.rescue.request"=>#<ActionController::Request:0x10343ec30 ...>, "action_controller.rescue.response"=>#<ActionController::Response:0x10343e3e8 @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session=[], @block=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "rack.input"=>#<StringIO:0x103527ae8>}>
+***** #<ActionController::Response:0x10343e3e8 @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session=[], @block=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>
+***** []
+!!!!!! actionnewcontrollerturkee_tasks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% request #<ActionController::Request:0x10343ec30 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9"}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "action_controller.request.request_parameters"=>{}, "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "rack.request.query_hash"=>{}, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.request.query_parameters"=>{}, "action_controller.rescue.request"=>#<ActionController::Request:0x10343ec30 ...>, "rack.request.query_string"=>"", "action_controller.rescue.response"=>#<ActionController::Response:0x10343e3e8 @request=#<ActionController::Request:0x10343ec30 ...>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session={:session_id=>"b1d7417c00ee62671539f859695198f9"}, @block=nil, @template=#<ActionView::Base:0x1033d6e78 @helpers=#<ActionView::Base::ProxyModule:0x1033d6db0>, @controller=#<TurkeeTasksController:0x103405fc0 @_response=#<ActionController::Response:0x10343e3e8 ...>, @performed_redirect=false, @before_filter_chain_aborted=false, @_session={:session_id=>"b1d7417c00ee62671539f859695198f9"}, @_params={"action"=>"new", "controller"=>"turkee_tasks"}, @real_format=nil, @template=#<ActionView::Base:0x1033d6e78 ...>, @_request=#<ActionController::Request:0x10343ec30 ...>, @performed_render=false, @_headers={"Cache-Control"=>"no-cache"}>, @view_paths=["/Users/jjones/Projects/turkee_iterator/app/views"], @_current_render=nil, @assigns_added=nil, @_first_render=nil, @assigns={}>, @redirected_to=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "rack.input"=>#<StringIO:0x103527ae8>}, @parameters={"action"=>"new", "controller"=>"turkee_tasks"}, @content_type=nil>
+%%%%%% params.clone actionnewcontrollerturkee_tasks
+%%%%%% http://, localhost:3000, /turkee_tasks/new, turkee_tasks, new, {"action"=>"new", "controller"=>"turkee_tasks"}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Processing TurkeeTasksController#new (for 127.0.0.1 at 2010-10-01 01:37:29) [GET]
+******* params = {"action"=>"new", "controller"=>"turkee_tasks"}
+
+NameError (uninitialized constant TurkeeTasksController::TurkeeTask):
+  app/controllers/turkee_tasks_controller.rb:4:in `new'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.5ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+***** #<ActionController::Request:0x10378f448 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9"}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk=--80671aec81fef26cc2fb10a8338df90dc8560647"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.rescue.request"=>#<ActionController::Request:0x10378f448 ...>, "action_controller.rescue.response"=>#<ActionController::Response:0x10378f3f8 @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session=[], @block=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x1037dc978>}>
+***** #<ActionController::Response:0x10378f3f8 @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session=[], @block=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>
+***** []
+!!!!!! actionnewcontrollerturkee_tasks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% request #<ActionController::Request:0x10378f448 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9"}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk=--80671aec81fef26cc2fb10a8338df90dc8560647"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "action_controller.request.request_parameters"=>{}, "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "rack.request.query_hash"=>{}, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.request.query_parameters"=>{}, "action_controller.rescue.request"=>#<ActionController::Request:0x10378f448 ...>, "rack.request.query_string"=>"", "action_controller.rescue.response"=>#<ActionController::Response:0x10378f3f8 @request=#<ActionController::Request:0x10378f448 ...>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session={:session_id=>"b1d7417c00ee62671539f859695198f9"}, @block=nil, @template=#<ActionView::Base:0x10378c108 @helpers=#<ActionView::Base::ProxyModule:0x10378bff0>, @controller=#<TurkeeTasksController:0x10378f178 @_response=#<ActionController::Response:0x10378f3f8 ...>, @performed_redirect=false, @before_filter_chain_aborted=false, @_session={:session_id=>"b1d7417c00ee62671539f859695198f9"}, @_params={"action"=>"new", "controller"=>"turkee_tasks"}, @real_format=nil, @template=#<ActionView::Base:0x10378c108 ...>, @_request=#<ActionController::Request:0x10378f448 ...>, @performed_render=false, @_headers={"Cache-Control"=>"no-cache"}>, @view_paths=["/Users/jjones/Projects/turkee_iterator/app/views"], @_current_render=nil, @assigns_added=nil, @_first_render=nil, @assigns={}>, @redirected_to=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x1037dc978>}, @parameters={"action"=>"new", "controller"=>"turkee_tasks"}, @content_type=nil>
+%%%%%% params.clone actionnewcontrollerturkee_tasks
+%%%%%% http://, localhost:3000, /turkee_tasks/new, turkee_tasks, new, {"action"=>"new", "controller"=>"turkee_tasks"}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Processing TurkeeTasksController#new (for 127.0.0.1 at 2010-10-01 01:38:38) [GET]
+******* params = {"action"=>"new", "controller"=>"turkee_tasks"}
+
+NameError (uninitialized constant TurkeeTasksController::TurkeeTask):
+  app/controllers/turkee_tasks_controller.rb:4:in `new'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+***** #<ActionController::Request:0x10348a338 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9"}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk=--80671aec81fef26cc2fb10a8338df90dc8560647"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.rescue.request"=>#<ActionController::Request:0x10348a338 ...>, "action_controller.rescue.response"=>#<ActionController::Response:0x10348a2e8 @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session=[], @block=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x1034d8e98>}>
+***** #<ActionController::Response:0x10348a2e8 @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session=[], @block=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>
+***** []
+!!!!!! actionnewcontrollerturkee_tasks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% request #<ActionController::Request:0x10348a338 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9"}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk=--80671aec81fef26cc2fb10a8338df90dc8560647"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "action_controller.request.request_parameters"=>{}, "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "rack.request.query_hash"=>{}, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.request.query_parameters"=>{}, "action_controller.rescue.request"=>#<ActionController::Request:0x10348a338 ...>, "rack.request.query_string"=>"", "action_controller.rescue.response"=>#<ActionController::Response:0x10348a2e8 @request=#<ActionController::Request:0x10348a338 ...>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session={:session_id=>"b1d7417c00ee62671539f859695198f9"}, @block=nil, @template=#<ActionView::Base:0x1034841e0 @helpers=#<ActionView::Base::ProxyModule:0x103484118>, @controller=#<TurkeeTasksController:0x10348a0b8 @_response=#<ActionController::Response:0x10348a2e8 ...>, @performed_redirect=false, @before_filter_chain_aborted=false, @_session={:session_id=>"b1d7417c00ee62671539f859695198f9"}, @_params={"action"=>"new", "controller"=>"turkee_tasks"}, @real_format=nil, @template=#<ActionView::Base:0x1034841e0 ...>, @_request=#<ActionController::Request:0x10348a338 ...>, @performed_render=false, @_headers={"Cache-Control"=>"no-cache"}>, @view_paths=["/Users/jjones/Projects/turkee_iterator/app/views"], @_current_render=nil, @assigns_added=nil, @_first_render=nil, @assigns={}>, @redirected_to=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x1034d8e98>}, @parameters={"action"=>"new", "controller"=>"turkee_tasks"}, @content_type=nil>
+%%%%%% params.clone actionnewcontrollerturkee_tasks
+%%%%%% http://, localhost:3000, /turkee_tasks/new, turkee_tasks, new, {"action"=>"new", "controller"=>"turkee_tasks"}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Processing TurkeeTasksController#new (for 127.0.0.1 at 2010-10-01 01:39:11) [GET]
+******* params = {"action"=>"new", "controller"=>"turkee_tasks"}
+  [4;35;1mTurkee::TurkeeTask Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+
+ArgumentError (too few arguments):
+  app/controllers/turkee_tasks_controller.rb:6:in `format'
+  app/controllers/turkee_tasks_controller.rb:6:in `new'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (88.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+***** #<ActionController::Request:0x1038091a8 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9"}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk=--80671aec81fef26cc2fb10a8338df90dc8560647"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.rescue.request"=>#<ActionController::Request:0x1038091a8 ...>, "action_controller.rescue.response"=>#<ActionController::Response:0x103809130 @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session=[], @block=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x103851a98>}>
+***** #<ActionController::Response:0x103809130 @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session=[], @block=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>
+***** []
+!!!!!! actionnewcontrollerturkee_tasks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% request #<ActionController::Request:0x1038091a8 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9"}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk=--80671aec81fef26cc2fb10a8338df90dc8560647"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "action_controller.request.request_parameters"=>{}, "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "rack.request.query_hash"=>{}, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.request.query_parameters"=>{}, "action_controller.rescue.request"=>#<ActionController::Request:0x1038091a8 ...>, "rack.request.query_string"=>"", "action_controller.rescue.response"=>#<ActionController::Response:0x103809130 @request=#<ActionController::Request:0x1038091a8 ...>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @session={:session_id=>"b1d7417c00ee62671539f859695198f9"}, @block=nil, @template=#<ActionView::Base:0x103805850 @helpers=#<ActionView::Base::ProxyModule:0x103805760>, @controller=#<TurkeeTasksController:0x103808eb0 @_response=#<ActionController::Response:0x103809130 ...>, @performed_redirect=false, @before_filter_chain_aborted=false, @_session={:session_id=>"b1d7417c00ee62671539f859695198f9"}, @_params={"action"=>"new", "controller"=>"turkee_tasks"}, @real_format=nil, @template=#<ActionView::Base:0x103805850 ...>, @_request=#<ActionController::Request:0x1038091a8 ...>, @performed_render=false, @_headers={"Cache-Control"=>"no-cache"}>, @view_paths=["/Users/jjones/Projects/turkee_iterator/app/views"], @_current_render=nil, @assigns_added=nil, @_first_render=nil, @assigns={}>, @redirected_to=nil, @writer=#<Proc:0x000000010343d010@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @assigns=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x103851a98>}, @parameters={"action"=>"new", "controller"=>"turkee_tasks"}, @content_type=nil>
+%%%%%% params.clone actionnewcontrollerturkee_tasks
+%%%%%% http://, localhost:3000, /turkee_tasks/new, turkee_tasks, new, {"action"=>"new", "controller"=>"turkee_tasks"}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Processing TurkeeTasksController#new (for 127.0.0.1 at 2010-10-01 01:39:45) [GET]
+******* params = {"action"=>"new", "controller"=>"turkee_tasks"}
+Rendering template within layouts/application
+Rendering turkee_tasks/new
+
+ActionView::TemplateError (undefined method `turkee_turkee_tasks_path' for #<ActionView::Base:0x103805850>) on line #5 of app/views/turkee_tasks/new.html.erb:
+2: 
+3:   <h1>New Turkee Task</h1>
+4: 
+5:   <% form_for(@turkee_task) do |f| %>
+6:       <%= f.error_messages %>
+7:       <ol>
+8:         <li>
+
+    app/views/turkee_tasks/new.html.erb:5
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+***** #<ActionController::Request:0x10343b7d8 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9"}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk=--80671aec81fef26cc2fb10a8338df90dc8560647"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.rescue.request"=>#<ActionController::Request:0x10343b7d8 ...>, "action_controller.rescue.response"=>#<ActionController::Response:0x10343af90 @body=["", []], @writer=#<Proc:0x0000000103439bb8@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @header={"Cache-Control"=>"no-cache"}, @block=nil, @assigns=[], @status=200, @session=[]>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x103523d30>}>
+***** #<ActionController::Response:0x10343af90 @body=["", []], @writer=#<Proc:0x0000000103439bb8@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @header={"Cache-Control"=>"no-cache"}, @block=nil, @assigns=[], @status=200, @session=[]>
+***** []
+!!!!!! actionnewcontrollerturkee_tasks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% request #<ActionController::Request:0x10343b7d8 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9"}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk=--80671aec81fef26cc2fb10a8338df90dc8560647"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "action_controller.request.request_parameters"=>{}, "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BjoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk%3D--80671aec81fef26cc2fb10a8338df90dc8560647", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "rack.request.query_hash"=>{}, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.request.query_parameters"=>{}, "action_controller.rescue.request"=>#<ActionController::Request:0x10343b7d8 ...>, "rack.request.query_string"=>"", "action_controller.rescue.response"=>#<ActionController::Response:0x10343af90 @request=#<ActionController::Request:0x10343b7d8 ...>, @redirected_to=nil, @body=["", []], @writer=#<Proc:0x0000000103439bb8@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @header={"Cache-Control"=>"no-cache"}, @block=nil, @template=#<ActionView::Base:0x1033f8500 @helpers=#<ActionView::Base::ProxyModule:0x1033f8410>, @controller=#<TurkeeTasksController:0x103402910 @_response=#<ActionController::Response:0x10343af90 ...>, @performed_redirect=false, @before_filter_chain_aborted=false, @_session={:session_id=>"b1d7417c00ee62671539f859695198f9"}, @_params={"action"=>"new", "controller"=>"turkee_tasks"}, @real_format=nil, @template=#<ActionView::Base:0x1033f8500 ...>, @_request=#<ActionController::Request:0x10343b7d8 ...>, @performed_render=false, @_headers={"Cache-Control"=>"no-cache"}>, @view_paths=["/Users/jjones/Projects/turkee_iterator/app/views"], @_current_render=nil, @assigns_added=nil, @_first_render=nil, @assigns={}>, @assigns=[], @status=200, @session={:session_id=>"b1d7417c00ee62671539f859695198f9"}>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x103523d30>}, @parameters={"action"=>"new", "controller"=>"turkee_tasks"}, @content_type=nil>
+%%%%%% params.clone actionnewcontrollerturkee_tasks
+%%%%%% http://, localhost:3000, /turkee_tasks/new, turkee_tasks, new, {"action"=>"new", "controller"=>"turkee_tasks"}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Processing TurkeeTasksController#new (for 127.0.0.1 at 2010-10-01 01:42:54) [GET]
+******* params = {"action"=>"new", "controller"=>"turkee_tasks"}
+  [4;35;1mTurkee::TurkeeTask Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+Rendering template within layouts/application
+Rendering turkee_tasks/new
+
+ActionView::TemplateError (undefined method `hit_body' for #<Turkee::TurkeeTask:0x1033f2ec0>) on line #21 of app/views/turkee_tasks/new.html.erb:
+18:         <li>
+19:           <%= f.label :hit_body %>
+20:           <br/>
+21:           <%= f.text_area :hit_body %>
+22:         </li>
+23:         <li>
+24:           <%= f.label :hit_reward %>
+
+    app/views/turkee_tasks/new.html.erb:21
+    app/views/turkee_tasks/new.html.erb:5
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/jjones/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (28.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateIterationVotes (20100930150102)
+  [4;35;1mSQL (1.3ms)[0m   [0mDROP TABLE `iteration_votes`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930150102'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mdescribe `turkee_imported_assignments`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `turkee_tasks`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddFormBodyToTurkeeTasks (20100930145945)
+  [4;35;1mSQL (78.5ms)[0m   [0mALTER TABLE `turkee_tasks` DROP `form_body`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930145945'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `turkee_imported_assignments`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `turkee_tasks`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTurkeeImportedAssignments (20100930143753)
+  [4;35;1mSQL (1.6ms)[0m   [0mDROP TABLE `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930143753'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `turkee_tasks`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTurkeeTasks (20100930143752)
+  [4;35;1mSQL (1.3ms)[0m   [0mDROP TABLE `turkee_tasks`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930143752'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateIterations (20100930143221)
+  [4;35;1mSQL (1.5ms)[0m   [0mDROP TABLE `iterations`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930143221'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateIterations (20100930143221)
+  [4;35;1mSQL (55.4ms)[0m   [0mCREATE TABLE `iterations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `value` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (9.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930143221')[0m
+Migrating to CreateTurkeeTasks (20100930143752)
+  [4;35;1mSQL (90.7ms)[0m   [0mCREATE TABLE `turkee_tasks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `hit_url` varchar(255), `sandbox` tinyint(1), `task_id` int(11), `task_type` varchar(255), `hit_title` text, `hit_description` text, `hit_id` varchar(255), `hit_reward` decimal(10,2), `form_url` varchar(255), `approved` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930143752')[0m
+Migrating to CreateTurkeeImportedAssignments (20100930143753)
+  [4;35;1mSQL (96.4ms)[0m   [0mCREATE TABLE `turkee_imported_assignments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `assignment_id` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930143753')[0m
+Migrating to AddFormBodyToTurkeeTasks (20100930145945)
+  [4;35;1mSQL (98.4ms)[0m   [0mALTER TABLE `turkee_tasks` ADD `form_body` varchar(255)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930145945')[0m
+Migrating to CreateIterationVotes (20100930150102)
+  [4;35;1mSQL (94.2ms)[0m   [0mCREATE TABLE `iteration_votes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `iteration_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930150102')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `iteration_votes`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `iteration_votes`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `iteration_votes`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `iterations`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `iterations`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `iterations`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `turkee_imported_assignments`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `turkee_imported_assignments`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `turkee_tasks`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateIterationVotes (20100930150102)
+  [4;35;1mSQL (67.2ms)[0m   [0mDROP TABLE `iteration_votes`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930150102'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `turkee_imported_assignments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `turkee_tasks`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddFormBodyToTurkeeTasks (20100930145945)
+  [4;35;1mSQL (81.6ms)[0m   [0mALTER TABLE `turkee_tasks` DROP `form_body`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930145945'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `turkee_imported_assignments`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `turkee_tasks`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTurkeeImportedAssignments (20100930143753)
+  [4;35;1mSQL (1.1ms)[0m   [0mDROP TABLE `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930143753'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `turkee_tasks`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTurkeeTasks (20100930143752)
+  [4;35;1mSQL (1.2ms)[0m   [0mDROP TABLE `turkee_tasks`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930143752'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateIterations (20100930143221)
+  [4;35;1mSQL (1.2ms)[0m   [0mDROP TABLE `iterations`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930143221'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateIterations (20100930143221)
+  [4;35;1mSQL (47.2ms)[0m   [0mCREATE TABLE `iterations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `value` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930143221')[0m
+Migrating to CreateTurkeeTasks (20100930143752)
+  [4;35;1mSQL (152.1ms)[0m   [0mCREATE TABLE `turkee_tasks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `hit_url` varchar(255), `sandbox` tinyint(1), `task_id` int(11), `task_type` varchar(255), `hit_title` text, `hit_description` text, `hit_id` varchar(255), `hit_reward` decimal(10,2), `hit_lifetime` int(11), `form_url` varchar(255), `approved` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930143752')[0m
+Migrating to CreateTurkeeImportedAssignments (20100930143753)
+  [4;35;1mSQL (96.0ms)[0m   [0mCREATE TABLE `turkee_imported_assignments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `assignment_id` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930143753')[0m
+Migrating to AddFormBodyToTurkeeTasks (20100930145945)
+  [4;35;1mSQL (100.3ms)[0m   [0mALTER TABLE `turkee_tasks` ADD `form_body` varchar(255)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930145945')[0m
+Migrating to CreateIterationVotes (20100930150102)
+  [4;35;1mSQL (94.1ms)[0m   [0mCREATE TABLE `iteration_votes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `iteration_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930150102')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `iteration_votes`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `iteration_votes`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `iteration_votes`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `iterations`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `iterations`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `iterations`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `turkee_imported_assignments`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `turkee_imported_assignments`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `turkee_tasks`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+***** #<ActionController::Request:0x10343b7d8 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ==--ee9adf348d05c8826a8359e1cab55290ce07d658"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.rescue.request"=>#<ActionController::Request:0x10343b7d8 ...>, "action_controller.rescue.response"=>#<ActionController::Response:0x10343af90 @body=["", []], @writer=#<Proc:0x0000000103439bb8@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @header={"Cache-Control"=>"no-cache"}, @block=nil, @assigns=[], @status=200, @session=[]>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x103523d30>}>
+***** #<ActionController::Response:0x10343af90 @body=["", []], @writer=#<Proc:0x0000000103439bb8@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @header={"Cache-Control"=>"no-cache"}, @block=nil, @assigns=[], @status=200, @session=[]>
+***** []
+!!!!!! actionnewcontrollerturkee_tasks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% request #<ActionController::Request:0x10343b7d8 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ==--ee9adf348d05c8826a8359e1cab55290ce07d658"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "action_controller.request.request_parameters"=>{}, "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/turkee_tasks/new", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/turkee_tasks/new", "rack.multiprocess"=>false, "rack.request.query_hash"=>{}, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.request.query_parameters"=>{}, "action_controller.rescue.request"=>#<ActionController::Request:0x10343b7d8 ...>, "rack.request.query_string"=>"", "action_controller.rescue.response"=>#<ActionController::Response:0x10343af90 @request=#<ActionController::Request:0x10343b7d8 ...>, @redirected_to=nil, @body=["", []], @writer=#<Proc:0x0000000103439bb8@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @header={"Cache-Control"=>"no-cache"}, @block=nil, @template=#<ActionView::Base:0x1033f8438 @helpers=#<ActionView::Base::ProxyModule:0x1033f8348>, @controller=#<TurkeeTasksController:0x103402910 @_response=#<ActionController::Response:0x10343af90 ...>, @performed_redirect=false, @before_filter_chain_aborted=false, @_session={:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, @_params={"action"=>"new", "controller"=>"turkee_tasks"}, @real_format=nil, @template=#<ActionView::Base:0x1033f8438 ...>, @_request=#<ActionController::Request:0x10343b7d8 ...>, @performed_render=false, @_headers={"Cache-Control"=>"no-cache"}>, @view_paths=["/Users/jjones/Projects/turkee_iterator/app/views"], @_current_render=nil, @assigns_added=nil, @_first_render=nil, @assigns={}>, @assigns=[], @status=200, @session={:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x103523d30>}, @parameters={"action"=>"new", "controller"=>"turkee_tasks"}, @content_type=nil>
+%%%%%% params.clone actionnewcontrollerturkee_tasks
+%%%%%% http://, localhost:3000, /turkee_tasks/new, turkee_tasks, new, {"action"=>"new", "controller"=>"turkee_tasks"}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Processing TurkeeTasksController#new (for 127.0.0.1 at 2010-10-01 01:49:21) [GET]
+******* params = {"action"=>"new", "controller"=>"turkee_tasks"}
+  [4;35;1mTurkee::TurkeeTask Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+Rendering template within layouts/application
+Rendering turkee_tasks/new
+Completed in 35ms (View: 31, DB: 2) | 200 OK [http://localhost/turkee_tasks/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+***** #<ActionController::Request:0x103430c48 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ==--ee9adf348d05c8826a8359e1cab55290ce07d658"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/", "rack.multiprocess"=>false, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.rescue.request"=>#<ActionController::Request:0x103430c48 ...>, "action_controller.rescue.response"=>#<ActionController::Response:0x10342f5a0 @writer=#<Proc:0x000000010342d390@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @block=nil, @assigns=[], @session=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "rack.input"=>#<StringIO:0x103519fb0>}>
+***** #<ActionController::Response:0x10342f5a0 @writer=#<Proc:0x000000010342d390@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @block=nil, @assigns=[], @session=[], @status=200>
+***** []
+!!!!!! actionnewcontrollerturkee_tasks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% request #<ActionController::Request:0x103430c48 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ==--ee9adf348d05c8826a8359e1cab55290ce07d658"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "action_controller.request.request_parameters"=>{}, "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/", "rack.multiprocess"=>false, "rack.request.query_hash"=>{}, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.request.query_parameters"=>{}, "action_controller.rescue.request"=>#<ActionController::Request:0x103430c48 ...>, "rack.request.query_string"=>"", "action_controller.rescue.response"=>#<ActionController::Response:0x10342f5a0 @redirected_to=nil, @request=#<ActionController::Request:0x103430c48 ...>, @writer=#<Proc:0x000000010342d390@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @block=nil, @template=#<ActionView::Base:0x1033ed790 @helpers=#<ActionView::Base::ProxyModule:0x1033ed6c8>, @controller=#<TurkeeTasksController:0x1033eff90 @_response=#<ActionController::Response:0x10342f5a0 ...>, @performed_redirect=false, @before_filter_chain_aborted=false, @_session={:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, @_params={"action"=>"new", "controller"=>"turkee_tasks"}, @real_format=nil, @template=#<ActionView::Base:0x1033ed790 ...>, @_request=#<ActionController::Request:0x103430c48 ...>, @performed_render=false, @_headers={"Cache-Control"=>"no-cache"}>, @view_paths=["/Users/jjones/Projects/turkee_iterator/app/views"], @_current_render=nil, @assigns_added=nil, @_first_render=nil, @assigns={}>, @assigns=[], @session={:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "rack.input"=>#<StringIO:0x103519fb0>}, @parameters={"action"=>"new", "controller"=>"turkee_tasks"}, @content_type=nil>
+%%%%%% params.clone actionnewcontrollerturkee_tasks
+%%%%%% http://, localhost:3000, /, turkee_tasks, new, {"action"=>"new", "controller"=>"turkee_tasks"}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Processing TurkeeTasksController#new (for 127.0.0.1 at 2010-10-01 01:51:23) [GET]
+******* params = {"action"=>"new", "controller"=>"turkee_tasks"}
+  [4;35;1mTurkee::TurkeeTask Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+Rendering template within layouts/application
+Rendering turkee_tasks/new
+Completed in 21ms (View: 17, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateIterationVotes (20100930150102)
+  [4;35;1mSQL (1.1ms)[0m   [0mDROP TABLE `iteration_votes`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930150102'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `turkee_imported_assignments`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `turkee_tasks`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddFormBodyToTurkeeTasks (20100930145945)
+  [4;35;1mSQL (79.0ms)[0m   [0mALTER TABLE `turkee_tasks` DROP `form_body`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930145945'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `turkee_imported_assignments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mdescribe `turkee_tasks`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTurkeeImportedAssignments (20100930143753)
+  [4;35;1mSQL (1.2ms)[0m   [0mDROP TABLE `turkee_imported_assignments`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930143753'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `turkee_tasks`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateTurkeeTasks (20100930143752)
+  [4;35;1mSQL (1.0ms)[0m   [0mDROP TABLE `turkee_tasks`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930143752'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `iterations`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `iterations`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `iterations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateIterations (20100930143221)
+  [4;35;1mSQL (1.3ms)[0m   [0mDROP TABLE `iterations`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100930143221'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateIterations (20100930143221)
+  [4;35;1mSQL (42.2ms)[0m   [0mCREATE TABLE `iterations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `value` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930143221')[0m
+Migrating to CreateTurkeeTasks (20100930143752)
+  [4;35;1mSQL (98.2ms)[0m   [0mCREATE TABLE `turkee_tasks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `hit_url` varchar(255), `sandbox` tinyint(1), `task_id` int(11), `task_type` varchar(255), `hit_title` text, `hit_description` text, `hit_id` varchar(255), `hit_reward` decimal(10,2), `hit_num_assignments` int(11), `hit_lifetime` int(11), `form_url` varchar(255), `approved` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930143752')[0m
+Migrating to CreateTurkeeImportedAssignments (20100930143753)
+  [4;35;1mSQL (98.4ms)[0m   [0mCREATE TABLE `turkee_imported_assignments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `assignment_id` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930143753')[0m
+Migrating to AddFormBodyToTurkeeTasks (20100930145945)
+  [4;35;1mSQL (98.6ms)[0m   [0mALTER TABLE `turkee_tasks` ADD `form_body` varchar(255)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930145945')[0m
+Migrating to CreateIterationVotes (20100930150102)
+  [4;35;1mSQL (96.0ms)[0m   [0mCREATE TABLE `iteration_votes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `iteration_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100930150102')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW FIELDS FROM `iteration_votes`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `iteration_votes`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `iteration_votes`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `iterations`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `iterations`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `iterations`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `turkee_imported_assignments`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `turkee_imported_assignments`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `turkee_imported_assignments`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `turkee_tasks`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `turkee_tasks`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+***** #<ActionController::Request:0x10342e038 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ==--ee9adf348d05c8826a8359e1cab55290ce07d658"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/", "rack.multiprocess"=>false, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.rescue.request"=>#<ActionController::Request:0x10342e038 ...>, "action_controller.rescue.response"=>#<ActionController::Response:0x10342d7f0 @writer=#<Proc:0x000000010342c418@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @block=nil, @assigns=[], @session=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x103519560>}>
+***** #<ActionController::Response:0x10342d7f0 @writer=#<Proc:0x000000010342c418@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @block=nil, @assigns=[], @session=[], @status=200>
+***** []
+!!!!!! actionnewcontrollerturkee_tasks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% request #<ActionController::Request:0x10342e038 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ==--ee9adf348d05c8826a8359e1cab55290ce07d658"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "action_controller.request.request_parameters"=>{}, "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/", "rack.multiprocess"=>false, "rack.request.query_hash"=>{}, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.request.query_parameters"=>{}, "action_controller.rescue.request"=>#<ActionController::Request:0x10342e038 ...>, "rack.request.query_string"=>"", "action_controller.rescue.response"=>#<ActionController::Response:0x10342d7f0 @redirected_to=nil, @request=#<ActionController::Request:0x10342e038 ...>, @writer=#<Proc:0x000000010342c418@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @block=nil, @template=#<ActionView::Base:0x1033ec778 @helpers=#<ActionView::Base::ProxyModule:0x1033ec6b0>, @controller=#<TurkeeTasksController:0x1033ef018 @_response=#<ActionController::Response:0x10342d7f0 ...>, @performed_redirect=false, @before_filter_chain_aborted=false, @_session={:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, @_params={"action"=>"new", "controller"=>"turkee_tasks"}, @real_format=nil, @template=#<ActionView::Base:0x1033ec778 ...>, @_request=#<ActionController::Request:0x10342e038 ...>, @performed_render=false, @_headers={"Cache-Control"=>"no-cache"}>, @view_paths=["/Users/jjones/Projects/turkee_iterator/app/views"], @_current_render=nil, @assigns_added=nil, @_first_render=nil, @assigns={}>, @assigns=[], @session={:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x103519560>}, @parameters={"action"=>"new", "controller"=>"turkee_tasks"}, @content_type=nil>
+%%%%%% params.clone actionnewcontrollerturkee_tasks
+%%%%%% http://, localhost:3000, /, turkee_tasks, new, {"action"=>"new", "controller"=>"turkee_tasks"}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Processing TurkeeTasksController#new (for 127.0.0.1 at 2010-10-01 02:04:20) [GET]
+******* params = {"action"=>"new", "controller"=>"turkee_tasks"}
+  [4;35;1mTurkee::TurkeeTask Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `turkee_tasks`[0m
+Rendering template within layouts/application
+Rendering turkee_tasks/new
+Completed in 22ms (View: 18, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+***** #<ActionController::Request:0x103803780 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ==--ee9adf348d05c8826a8359e1cab55290ce07d658"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/", "rack.multiprocess"=>false, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.rescue.request"=>#<ActionController::Request:0x103803780 ...>, "action_controller.rescue.response"=>#<ActionController::Response:0x103803730 @writer=#<Proc:0x000000010342c418@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @block=nil, @assigns=[], @session=[], @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x10384cfc0>}>
+***** #<ActionController::Response:0x103803730 @writer=#<Proc:0x000000010342c418@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @block=nil, @assigns=[], @session=[], @status=200>
+***** []
+!!!!!! actionnewcontrollerturkee_tasks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% request #<ActionController::Request:0x103803780 @env={"rack.session"=>{:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, "SERVER_NAME"=>"localhost", "HTTP_ACCEPT"=>"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "HTTP_HOST"=>"localhost:3000", "HTTP_CACHE_CONTROL"=>"no-cache", "rack.request.cookie_hash"=>{"_uex_web_session"=>"BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg==--ac84466505bc1910da9cb7dda9d2f42dec33cdd5", "_turkee_iterator_session"=>"BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ==--ee9adf348d05c8826a8359e1cab55290ce07d658"}, "REMOTE_HOST"=>"localhost", "HTTP_USER_AGENT"=>"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10", "HTTP_KEEP_ALIVE"=>"115", "rack.url_scheme"=>"http", "REQUEST_PATH"=>"/", "action_controller.request.request_parameters"=>{}, "SERVER_PROTOCOL"=>"HTTP/1.1", "HTTP_ACCEPT_LANGUAGE"=>"en-us,en;q=0.5", "rack.errors"=>#<IO:0x1001b5b88>, "PATH_INFO"=>"/", "REMOTE_ADDR"=>"127.0.0.1", "SERVER_SOFTWARE"=>"WEBrick/1.3.1 (Ruby/1.8.7/2010-08-16)", "rack.run_once"=>false, "rack.version"=>[1, 1], "rack.request.cookie_string"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "SCRIPT_NAME"=>"", "HTTP_COOKIE"=>"_uex_web_session=BAh7CkkiD3Nlc3Npb25faWQGOgZFRiIlMjVkOGFhZTUxYzQ1ZDc2YjgwODdhNjFmYTJhNzI3NjFJIhxwcmV2aW91c191c2VyX2xvY2F0aW9ucwY7AEZbAEkiFWNoYW5nZWRfbG9jYXRpb24GOwBGRkkiEnVzZXJfbG9jYXRpb24GOwBGewk6CWNpdHlJIhJTYW4gRnJhbmNpc2NvBjsARjoKc3RhdGVJIgdDQQY7AEY6DWxhdGl0dWRlZhozNy43NzkyMDAwMDAwMDAwMDMAhYg6DmxvbmdpdHVkZWYPLTEyMi40MgAUe0kiEF9jc3JmX3Rva2VuBjsARkkiMWxGeE5ZSGRuK2RzS0FyVXhYd3lvdnZLMXE5TEVBeSt4TmZnSVN5RGZDaDA9BjsARg%3D%3D--ac84466505bc1910da9cb7dda9d2f42dec33cdd5; _turkee_iterator_session=BAh7BzoPc2Vzc2lvbl9pZCIlYjFkNzQxN2MwMGVlNjI2NzE1MzlmODU5Njk1MTk4Zjk6EF9jc3JmX3Rva2VuIjFLOG9yRGFLclA0dVB1UG9LQW16VGtacmNDYk44bW1rV3hKVFV1aVFtVjY0PQ%3D%3D--ee9adf348d05c8826a8359e1cab55290ce07d658", "rack.multithread"=>false, "HTTP_VERSION"=>"HTTP/1.1", "action_controller.request.path_parameters"=>{"action"=>"new", "controller"=>"turkee_tasks"}, "REQUEST_URI"=>"http://localhost:3000/", "rack.multiprocess"=>false, "rack.request.query_hash"=>{}, "SERVER_PORT"=>"3000", "HTTP_ACCEPT_CHARSET"=>"ISO-8859-1,utf-8;q=0.7,*;q=0.7", "rack.session.options"=>{:path=>"/", :httponly=>true, :domain=>nil, :key=>"_session_id", :id=>"b1d7417c00ee62671539f859695198f9", :expire_after=>nil}, "REQUEST_METHOD"=>"GET", "action_controller.request.query_parameters"=>{}, "action_controller.rescue.request"=>#<ActionController::Request:0x103803780 ...>, "rack.request.query_string"=>"", "action_controller.rescue.response"=>#<ActionController::Response:0x103803730 @redirected_to=nil, @request=#<ActionController::Request:0x103803780 ...>, @writer=#<Proc:0x000000010342c418@/Users/jjones/.rvm/gems/ruby-1.8.7-p302@rails2/gems/actionpack-2.3.8/lib/action_controller/response.rb:46>, @body=["", []], @header={"Cache-Control"=>"no-cache"}, @block=nil, @template=#<ActionView::Base:0x1038003c8 @helpers=#<ActionView::Base::ProxyModule:0x103800300>, @controller=#<TurkeeTasksController:0x1038034d8 @_response=#<ActionController::Response:0x103803730 ...>, @performed_redirect=false, @before_filter_chain_aborted=false, @_session={:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, @_params={"action"=>"new", "controller"=>"turkee_tasks"}, @real_format=nil, @template=#<ActionView::Base:0x1038003c8 ...>, @_request=#<ActionController::Request:0x103803780 ...>, @performed_render=false, @_headers={"Cache-Control"=>"no-cache"}>, @view_paths=["/Users/jjones/Projects/turkee_iterator/app/views"], @_current_render=nil, @assigns_added=nil, @_first_render=nil, @assigns={}>, @assigns=[], @session={:session_id=>"b1d7417c00ee62671539f859695198f9", :_csrf_token=>"K8orDaKrP4uPuPoKAmzTkZrcCbN8mmkWxJTUuiQmV64="}, @status=200>, "GATEWAY_INTERFACE"=>"CGI/1.1", "QUERY_STRING"=>"", "HTTP_CONNECTION"=>"keep-alive", "HTTP_ACCEPT_ENCODING"=>"gzip,deflate", "HTTP_PRAGMA"=>"no-cache", "rack.input"=>#<StringIO:0x10384cfc0>}, @parameters={"action"=>"new", "controller"=>"turkee_tasks"}, @content_type=nil>
+%%%%%% params.clone actionnewcontrollerturkee_tasks
+%%%%%% http://, localhost:3000, /, turkee_tasks, new, {"action"=>"new", "controller"=>"turkee_tasks"}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+Processing TurkeeTasksController#new (for 127.0.0.1 at 2010-10-01 02:07:08) [GET]
+******* params = {"action"=>"new", "controller"=>"turkee_tasks"}
+Rendering template within layouts/application
+Rendering turkee_tasks/new
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]

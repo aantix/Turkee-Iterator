@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  hit_title: MyString
+  hit_description: MyString
+  hit_body: MyString
+  hit_reward: 9.99
+  hit_lifetime: 1
+
+two:
+  hit_title: MyString
+  hit_description: MyString
+  hit_body: MyString
+  hit_reward: 9.99
+  hit_lifetime: 1

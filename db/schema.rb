@@ -37,6 +37,9 @@ ActiveRecord::Schema.define(:version => 20100930150102) do
     t.text     "hit_title"
     t.text     "hit_description"
     t.string   "hit_id"
+    t.decimal  "hit_reward",          :precision => 10, :scale => 2
+    t.integer  "hit_num_assignments"
+    t.integer  "hit_lifetime"
     t.string   "form_url"
     t.string   "approved"
     t.datetime "created_at"

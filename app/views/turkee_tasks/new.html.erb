@@ -1,0 +1,64 @@
+<div class="span-11">
+
+  <h1>New Turkee Task</h1>
+
+  <% form_for(@turkee_task) do |f| %>
+      <%= f.error_messages %>
+      <ol>
+        <li>
+          <%= f.label :hit_title %>
+          <br/>
+          <%= f.text_field :hit_title %>
+        </li>
+        <li>
+          <%= f.label :hit_description %>
+          <br/>
+          <%= f.text_area :hit_description %>
+        </li>
+        <li>
+          <%= f.label :form_body %>
+          <br/>
+          <%= f.text_area :form_body %>
+        </li>
+        <li>
+          <%= f.label :hit_reward %>
+          <br/>
+          $<%= f.text_field :hit_reward %>
+        </li>
+        <li>
+          <%= f.label :hit_num_assignments %>
+          <br/>
+          <%= f.text_field :hit_num_assignments %>
+        </li>
+        <li>
+          <%= f.label :hit_lifetime %>
+          <br/>
+          <%= f.text_field :hit_lifetime %>
+        </li>
+        <li>
+          <%= f.submit 'Create' %>
+        </li>
+      </ol>
+  <% end %>
+
+</div>
+
+<div class="span-2 last">
+  &nbsp;
+</div>
+
+<div class="span-11">
+  <h3>
+    <span class="alt">Fields</span>
+  </h3>
+
+  <ol>
+    <li>Title initially displayed to all Turkers looking for tasks.</li>
+    <li>Longer description displayed when a turker clicks on a particular task.</li>
+    <li>The body of the task display on the top of the form.</li>
+    <li>The amount of money the Turker will be awarded for completing the task.</li>
+    <li>Number of Turkers that can perform this HIT.</li>
+    <li>The number of days the HIT will be valid.</li>
+  </ol>
+
+</div>

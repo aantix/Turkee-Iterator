@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.namespace('turkee') do |turkee|
+    turkee.resources :turkee_tasks
+  end
+
   map.resources :iterations
   map.resources :iteration_votes
 
@@ -34,7 +38,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  # map.root :controller => "welcome"
+  map.root :controller => "turkee_tasks", :action => "new"
 
   # See how all your routes lay out with "rake routes"
 
