@@ -12,31 +12,31 @@
   <component name="GemRequirementsHolder" version="3">
     <requirement>
       <requirement>
-        <dependency name="mysql" version="0" bound="GREATER_OR_EQUAL" git="false" />
+        <dependency name="mysql" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
       </requirement>
       <source from="config/database.yml" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="rails" version="2.3.8" bound="EQUAL" git="false" />
+        <dependency name="rails" version="2.3.8" bound="EQUAL" git="false" doRequire="true" />
       </requirement>
       <source from="config/environment.rb" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" git="false" />
+        <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
       </requirement>
       <source from="config/boot.rb" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="rturk" version="0" bound="GREATER_OR_EQUAL" git="false" />
+        <dependency name="rturk" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
       </requirement>
       <source from="config/environment.rb" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="turkee" version="0" bound="GREATER_OR_EQUAL" git="false" />
+        <dependency name="turkee" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
       </requirement>
       <source from="config/environment.rb" />
     </requirement>

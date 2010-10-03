@@ -5,11 +5,11 @@ class TurkeeTasksController < ApplicationController
   end
 
   def create
-    Turkee::TurkeeTask.create_hit(params[:title], params[:description], 'Iteration',
-                                  params[:num_assignments], params[:reward], params[:lifetime])
+    task = Turkee::TurkeeTask.create_hit(params[:title], params[:description], 'Iteration',
+                                         params[:num_assignments], params[:reward], params[:lifetime])
 
-    flash[:notice] = 'Auction was successfully created.'
-    redirect_to request.referrer
+    flash[:notice] = 'HIT was successfully created.'
+    redirect_to iterations_path(task.id)
   end
 
 end
