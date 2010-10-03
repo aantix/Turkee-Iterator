@@ -2,6 +2,7 @@
 
 // Initializes a mechanical turk form and disables the form button
 //   until the user has accepted the turk task.
+
 function gup( name )
 {
   var regexS = "[\\?&]"+name+"=([^&#]*)";

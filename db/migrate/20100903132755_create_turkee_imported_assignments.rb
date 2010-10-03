@@ -5,6 +5,8 @@ class CreateTurkeeImportedAssignments < ActiveRecord::Migration
       t.string   "assignment_id", :unique => true
       t.timestamps
     end
+
+    add_index :turkee_imported_assignments, :assignment_id, :unique => true
   end
 
   def self.down

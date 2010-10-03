@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(:version => 20101002062951) do
     t.datetime "updated_at"
   end
 
+  add_index "turkee_imported_assignments", ["assignment_id"], :name => "index_turkee_imported_assignments_on_assignment_id", :unique => true
+
   create_table "turkee_tasks", :force => true do |t|
     t.string   "hit_url"
     t.boolean  "sandbox"
@@ -42,7 +44,7 @@ ActiveRecord::Schema.define(:version => 20101002062951) do
     t.integer  "hit_num_assignments"
     t.integer  "hit_lifetime"
     t.string   "form_url"
-    t.string   "approved"
+    t.boolean  "complete"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "form_body"
