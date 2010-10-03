@@ -1,10 +1,12 @@
-<div id="results" class="span-24">
+<div class="span-24">
 
   <div id="spinner" style="display:none">
     <%= image_tag 'spinner.gif' %> Refreshing results.
   </div>
 
-  <%= render :partial => 'results' %>
+  <div id="results" class="span-11">
+    <%= render :partial => 'results' %>
+  </div>
 
-  <%= periodically_call_remote(:url => {:action => :show_results, }, :frequency => '20') %>
+  <%= periodically_call_remote(:url => {:action => :results, }, :frequency => '30') %>
 </div>

@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
     turkee.resources :turkee_tasks
   end
 
-  map.resources :iterations, :collection => {:show_results => :get}
+  map.resources :iterations, :collection => {:results => :get}
   map.resources :iteration_votes
 
   # The priority is based upon order of creation: first created -> highest priority.

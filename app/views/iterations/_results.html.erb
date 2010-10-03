@@ -1,1 +1,15 @@
 <h1>Returned Results</h1>
+
+<table>
+  <tr>
+    <th>Submission</th>
+    <th># Votes</th>
+  </tr>
+
+  <% @iterations.each do |iteration| %>
+      <tr>
+        <td><%= h iteration.value %></td>
+        <td><%= h iteration.iteration_votes.count %></td>
+      </tr>
+  <% end %>
+</table>
