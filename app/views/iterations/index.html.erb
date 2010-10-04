@@ -1,5 +1,18 @@
 <div class="span-24">
 
+  <fieldset>
+
+    <legend>User Instructions</legend>
+    <span class="alt">
+      <%= @turkee_task.form_body %>
+    </span>
+
+  </fieldset>
+
+</div>
+
+<div class="span-24">
+
   <div id="spinner" style="display:none">
     <%= image_tag 'spinner.gif' %> Refreshing results.
   </div>
@@ -8,5 +21,5 @@
     <%= render :partial => 'results' %>
   </div>
 
-  <%= periodically_call_remote(:url => {:action => :results, }, :frequency => '30') %>
+  <%= periodically_call_remote(:url => {:action => :results, :id => @turkee_task.id}, :frequency => '30') %>
 </div>

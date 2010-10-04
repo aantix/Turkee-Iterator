@@ -17,7 +17,7 @@ class TurkeeTasksController < ApplicationController
     Iteration.create(:value => seed_data, :turkee_task_id => task.id) unless seed_data.blank?
 
     flash[:notice] = 'HIT was successfully created.'
-    redirect_to iterations_path(task.id)
+    redirect_to iterations_path(:id => task.id)
   end
 
 end
