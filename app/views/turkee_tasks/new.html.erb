@@ -1,4 +1,4 @@
-<div class="span-15">
+<div class="span-15 turkee">
 
   <h1>New Turkee Task</h1>
 
@@ -37,6 +37,11 @@
         </li>
       </ol>
 
+      <fieldset>
+        <legend>Seed Data</legend>
+        <%= text_area :seed, :data %>
+
+      </fieldset>
       <%= f.submit 'Create' %>
   <% end %>
 

@@ -1,8 +1,11 @@
 == Description
 
 TurkeeIterator is a demo application for the Turkee gem.
-# More to come.
 
+== Setup
+1) You need to deploy this application to a production server.  The Mechanical Turkers need to be able to access this application so it must be deployed to a shared host/VPS/etc.
+
+2) Access the server at it's deployed location and you should see a form that has you enter the parameters to create a new HIT.
 
 == Copyright
 

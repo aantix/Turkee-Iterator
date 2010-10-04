@@ -25,8 +25,8 @@ class IterationsController < ApplicationController
     def get_results(process_hits = false)
       raise 'Must provide a turkee_task id to list the relevant results.' if params[:turkee_task_id].nil?
 
-      turkee_task = Turkee::TurkeeTask.find(params[:turkee_task_id])
-      Turkee::TurkeeTask.process_hits(turkee_task) if process_hits
+      @turkee_task = Turkee::TurkeeTask.find(params[:turkee_task_id])
+      Turkee::TurkeeTask.process_hits(@turkee_task) if process_hits
       @iterations = Iteration.find_by_turkee_task_id(turkee_task_id.id)
     end
 
