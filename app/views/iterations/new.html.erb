@@ -1,9 +1,12 @@
 <div class="span-24">
+  <h2>Directions:</h2>
   <%= @turkee_task.form_body %>
 </div>
 
+<hr>
+
 <div class="span-11">
-  <h1>Vote for your favorite submission.</h1>
+  <h3>Vote for your favorite submission.</h3>
 
   <table>
     <tr>
@@ -36,7 +39,7 @@
 </div>
 
 <div class="span-11 last">
-  <h1>Create your own</h1>
+  <h3>Create your own</h3>
   For a chance to earn an additional bonus, submit your own creation to be voted on.
 
   <% turkee_form_for(@iteration) do |f| %>
