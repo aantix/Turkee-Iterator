@@ -40,11 +40,12 @@ namespace :site do
   end
 
   desc "Create sym link to the RTurk config."
-  task :chown do
+  task :symconfig do
     run "ln -s /var/www/rails/turkee_iterator/shared/turk_task_config.rb /var/www/rails/turkee_iterator/current/config/initializers/turk_task_config.rb"
   end
 
 end
 
 after :deploy, "site:chown"
+after :deploy, "site:symconfig"
 after :deploy, "deploy:cleanup"   # Only keep the last five releases around.
