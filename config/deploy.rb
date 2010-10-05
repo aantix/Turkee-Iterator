@@ -39,6 +39,11 @@ namespace :site do
     run "cd #{current_path} && chown -R apache *"
   end
 
+  desc "Create sym link to the RTurk config."
+  task :chown do
+    run "ln -s /var/www/rails/turkee_iterator/shared/turk_task_config.rb /var/www/rails/turkee_iterator/current/config/initializers/turk_task_config.rb"
+  end
+
 end
 
 after :deploy, "site:chown"
