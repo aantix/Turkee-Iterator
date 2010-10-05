@@ -1,7 +1,7 @@
 class IterationsController < ApplicationController
 
   def new
-    params[:id] = Turkee::TurkeeTask.find_by_hit_id(params[:HITId]).id rescue nil
+    params[:id] = Turkee::TurkeeTask.find_by_hit_id(params[:hitId]).id rescue nil
 
     get_results
     @iteration  = Iteration.new
