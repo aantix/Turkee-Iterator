@@ -1,3 +1,9 @@
+<div class="span-24 error last">
+  <h3><%= image_tag 'stop_sign.gif' %>&nbsp;&nbsp;Click the <span class="alt">"Accept Hit"</span> button above.</h3>
+</div>
+
+<hr class="space">
+
 <div class="span-24 success">
   <h2>Directions:</h2>
   <span class="alt">
@@ -5,7 +11,7 @@
   </span>
 </div>
 
-<hr>
+<hr class="space">
 
 <div class="span-11">
   <h3>Vote for your favorite submission.</h3>
@@ -30,6 +36,7 @@
           <td>
             <% turkee_form_for IterationVote.new do |f| %>
                 <%= f.hidden_field :iteration_id, :value => iteration.id %>
+                <%= f.hidden_field :assignmentId, :value => @assignment_id %>
                 <%= f.submit 'Vote!',:disabled => @disabled %>
             <% end %>
           </td>
@@ -56,6 +63,8 @@
 
   <% turkee_form_for @iteration do |f| %>
       <%= f.error_messages %>
+
+      <%= f.hidden_field :assignmentId, :value => @assignment_id %>
 
       <p>
         <%= f.text_area :value, :disabled => @disabled %>
