@@ -9,7 +9,9 @@ class TurkeeTasksController < ApplicationController
     turkee_task = params[:turkee_turkee_task]
     referer     = URI::parse(request.referer)
 
-    task = Turkee::TurkeeTask.create_hit(referer.host, turkee_task[:hit_title], turkee_task[:hit_description], 'Iteration',
+    host        = "#{referer.scheme}://#{referer.host}"
+
+    task = Turkee::TurkeeTask.create_hit(host, turkee_task[:hit_title], turkee_task[:hit_description], 'Iteration',
                                          turkee_task[:hit_num_assignments], turkee_task[:hit_reward], turkee_task[:hit_lifetime])
 
     task.form_body = turkee_task[:form_body]

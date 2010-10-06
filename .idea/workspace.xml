@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="21f7ac6b-44f9-41fe-be0f-e64a0a1eb8d9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/iterations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/iterations_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/iterations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/iterations/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
@@ -47,19 +47,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="355" selection-end="355" vertical-scroll-proportion="0.14516129">
+            <state line="43" column="103" selection-start="1313" selection-end="1328" vertical-scroll-proportion="-11.518518">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="turkee_tasks_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="2" selection-start="974" selection-end="974" vertical-scroll-proportion="-12.148149">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="turkee_tasks_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="75" selection-start="554" selection-end="554" vertical-scroll-proportion="-8.666667">
+            <state line="13" column="41" selection-start="398" selection-end="398" vertical-scroll-proportion="0.48447204">
               <folding />
             </state>
           </provider>
@@ -68,7 +77,7 @@
       <file leaf-file-name="iterations_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/iterations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="21" selection-start="179" selection-end="179" vertical-scroll-proportion="-2.6666667">
+            <state line="16" column="21" selection-start="541" selection-end="541" vertical-scroll-proportion="-2.3703704">
               <folding />
             </state>
           </provider>
@@ -143,7 +152,6 @@
         <option value="$PROJECT_DIR$/app/models/iteration.rb" />
         <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/iterations/_results.html.erb" />
         <option value="$PROJECT_DIR$/app/views/iterations/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb" />
@@ -151,6 +159,7 @@
         <option value="$PROJECT_DIR$/app/controllers/iterations_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/iterations/new.html.erb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb" />
       </list>
     </option>
   </component>
@@ -668,11 +677,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="71" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.29192546" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/turk_task_config.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="55" selection-start="278" selection-end="278" vertical-scroll-proportion="0.18145162" />
@@ -720,20 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/iterations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="179" selection-end="179" vertical-scroll-proportion="-2.6666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="75" selection-start="554" selection-end="554" vertical-scroll-proportion="-8.666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/iterations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="0" selection-start="1369" selection-end="1369" vertical-scroll-proportion="-7.1346154">
@@ -755,9 +745,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="103" selection-start="1313" selection-end="1328" vertical-scroll-proportion="-11.518518">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="355" selection-end="355" vertical-scroll-proportion="0.14516129">
+        <state line="23" column="2" selection-start="974" selection-end="974" vertical-scroll-proportion="-12.148149">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/iterations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="21" selection-start="541" selection-end="541" vertical-scroll-proportion="-2.3703704">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="41" selection-start="398" selection-end="398" vertical-scroll-proportion="0.48447204">
           <folding />
         </state>
       </provider>
