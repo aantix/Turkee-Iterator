@@ -36,8 +36,9 @@
           <td>
             <% turkee_form_for(iteration, @assignment_id) do |f| %>
 
-                <% f.fields_for iteration.iteration_votes.build do |iv| %>
-                  <%= iv.hidden_field :iteration_id, :value => iteration.id %>
+                <% iteration.iteration_votes.build(:iteration_id => iteration.id) %>
+                <% f.fields_for :iteration_votes do |iv| %>
+                  <%= iv.hidden_field :iteration_id %>
                 <% end %>
 
                 <%= f.submit 'Vote!',:disabled => @disabled %>
