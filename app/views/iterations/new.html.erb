@@ -61,7 +61,7 @@
   For a chance to earn an additional bonus, submit your own creation to be voted on.
 
   <% turkee_form_for(@iteration, @assignment_id) do |f| %>
-      <%= f.hidden_field :turkee_task_id, :value => @iteration.turkee_task.id %>
+      <%= f.hidden_field :turkee_task_id, :value => @turkee_task.id %>
       <p><%= f.text_area :value, :disabled => @disabled %></p>
       <p><%= f.submit 'Create', :disabled => @disabled %></p>
   <% end %>
