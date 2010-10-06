@@ -30,10 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/iterations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="21" selection-start="942" selection-end="942" vertical-scroll-proportion="0.6637555">
+            <state line="39" column="60" selection-start="944" selection-end="944" vertical-scroll-proportion="-5.480769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iteration.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/iteration.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0678392">
               <folding />
             </state>
           </provider>
@@ -51,16 +60,7 @@
       <file leaf-file-name="iterations_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/iterations_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="85" selection-start="857" selection-end="857" vertical-scroll-proportion="-7.037037">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iteration.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/iteration.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="48" selection-start="181" selection-end="181" vertical-scroll-proportion="-3.3333333">
+            <state line="26" column="85" selection-start="857" selection-end="857" vertical-scroll-proportion="-16.148148">
               <folding />
             </state>
           </provider>
@@ -131,8 +131,8 @@
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/iteration_vote.rb" />
-        <option value="$PROJECT_DIR$/app/models/iteration.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/app/models/iteration.rb" />
         <option value="$PROJECT_DIR$/app/views/iterations/new.html.erb" />
       </list>
     </option>
@@ -588,15 +588,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="787" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1087" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2034632" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14199395" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22245763" sideWeight="0.7965368" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16613925" sideWeight="0.85800606" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -711,30 +711,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/iterations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="85" selection-start="857" selection-end="857" vertical-scroll-proportion="-7.037037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/iteration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="48" selection-start="181" selection-end="181" vertical-scroll-proportion="-3.3333333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/iterations/_results.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="24" selection-start="99" selection-end="99" vertical-scroll-proportion="-1.7647059">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/iterations/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="212" selection-end="212" vertical-scroll-proportion="-4.5882354">
           <folding />
         </state>
       </provider>
@@ -746,9 +725,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/iterations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="85" selection-start="857" selection-end="857" vertical-scroll-proportion="-16.148148">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/iterations/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="212" selection-end="212" vertical-scroll-proportion="-4.5882354">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/iterations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="21" selection-start="942" selection-end="942" vertical-scroll-proportion="0.6637555">
+        <state line="39" column="60" selection-start="944" selection-end="944" vertical-scroll-proportion="-5.480769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/iteration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0678392">
           <folding />
         </state>
       </provider>
