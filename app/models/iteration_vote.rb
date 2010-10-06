@@ -1,3 +1,3 @@
 class IterationVote < ActiveRecord::Base
-  belongs_to :iteration, :counter_cache => true
+  belongs_to :iteration
 end
