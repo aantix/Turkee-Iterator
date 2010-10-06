@@ -8,15 +8,13 @@
 
     <hr class="space">
 
-    <%= link_to(truncate(@turkee_task.hit_url,:length => 30, :omission => '...'), @turkee_task.hit_url) %>
+    Link: <%= link_to(truncate(@turkee_task.hit_url,:length => 30, :omission => '...'), @turkee_task.hit_url) %>
 
 </div>
 
 <div class="span-24">
 
-  <div id="spinner" style="display:none">
-    <%= image_tag 'spinner.gif' %> Fetching results from Mechanical Turk.
-  </div>
+  <%= render :partial => 'spinner' %>
 
   <div id="results" class="span-11">
     <%= render :partial => 'results' %>

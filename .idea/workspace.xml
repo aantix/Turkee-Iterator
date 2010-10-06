@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21f7ac6b-44f9-41fe-be0f-e64a0a1eb8d9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/iterations/_new_results.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/iterations/_spinner.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/iterations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/iterations_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/iteration.rb" afterPath="$PROJECT_DIR$/app/models/iteration.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/iterations/index.html.erb" afterPath="$PROJECT_DIR$/app/views/iterations/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/iterations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/iterations/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
     </list>
@@ -33,34 +36,16 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/iterations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="64" selection-start="1648" selection-end="1648" vertical-scroll-proportion="-11.903846">
+            <state line="24" column="49" selection-start="625" selection-end="625" vertical-scroll-proportion="-8.769231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="iteration.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/iteration.rb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/iterations/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="44" selection-start="188" selection-end="188" vertical-scroll-proportion="-3.3333333">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="turkee_tasks_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="48" selection-start="663" selection-end="663" vertical-scroll-proportion="-12.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iterations_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/iterations_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="18" selection-start="1008" selection-end="1020" vertical-scroll-proportion="-22.666666">
+            <state line="18" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.41968912">
               <folding />
             </state>
           </provider>
@@ -75,10 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/iterations/index.html.erb">
+      <file leaf-file-name="iteration.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/iteration.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="158" selection-end="158" vertical-scroll-proportion="0.20984456">
+            <state line="5" column="44" selection-start="188" selection-end="188" vertical-scroll-proportion="-3.3333333">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iterations_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/iterations_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="50" selection-start="420" selection-end="420" vertical-scroll-proportion="-6.0">
               <folding />
             </state>
           </provider>
@@ -126,14 +120,14 @@
         <option value="$PROJECT_DIR$/app/views/iterations/_results.html.erb" />
         <option value="$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/iterations_controller.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/models/iteration_vote.rb" />
-        <option value="$PROJECT_DIR$/app/views/iterations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/iteration.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/iterations_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/iterations/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/iterations/new.html.erb" />
       </list>
     </option>
   </component>
@@ -704,37 +698,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/iterations/_results.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/iteration_vote.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="99" selection-end="99" vertical-scroll-proportion="-1.7647059">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/iterations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="1008" selection-end="1020" vertical-scroll-proportion="-22.666666">
+        <state line="8" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.18090452">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="48" selection-start="663" selection-end="663" vertical-scroll-proportion="-12.0">
+        <state line="18" column="48" selection-start="663" selection-end="663" vertical-scroll-proportion="0.40703517">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/iterations/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/iterations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="64" selection-start="1648" selection-end="1648" vertical-scroll-proportion="-11.903846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/iteration_vote.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="0.18090452">
+        <state line="9" column="50" selection-start="420" selection-end="420" vertical-scroll-proportion="-6.0">
           <folding />
         </state>
       </provider>
@@ -746,9 +726,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/iterations/_results.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="24" selection-start="99" selection-end="99" vertical-scroll-proportion="-1.7647059">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/iterations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="49" selection-start="625" selection-end="625" vertical-scroll-proportion="-8.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/iterations/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="158" selection-end="158" vertical-scroll-proportion="0.20984456">
+        <state line="18" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.41968912">
           <folding />
         </state>
       </provider>

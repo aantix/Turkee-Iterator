@@ -1,8 +1,10 @@
-<div class="span-24 error last">
-  <h3><%= image_tag 'stop_sign.gif' %>&nbsp;&nbsp;Click the <span class="alt">"Accept Hit"</span> button above.</h3>
-</div>
+<% if @disabled %>
+    <div class="span-24 error last">
+      <h3><%= image_tag 'stop_sign.gif' %>&nbsp;&nbsp;Click the <span class="alt">"Accept Hit"</span> button above.</h3>
+    </div>
 
-<hr class="space">
+    <hr class="space">
+<% end %>
 
 <div class="span-24 success">
   <h2>Directions:</h2>
@@ -13,45 +15,14 @@
 
 <hr class="space">
 
-<div class="span-11">
-  <h3>Vote for your favorite submission.</h3>
+<%= render :partial => 'spinner' %>
 
-  <table>
-    <tr>
-      <th>Submission</th>
-      <th>&nbsp;</th>
-      <th>&nbsp;</th>
-      <th>Votes</th>
-    </tr>
-
-    <% @iterations.each do |iteration| %>
-        <tr>
-
-          <td>
-            <span class="alt">
-              <%= h iteration.value %>
-            </span>
-          </td>
-
-          <td>
-            <% turkee_form_for(IterationVote.new, @assignment_id) do |f| %>
-                <%= f.hidden_field :iteration_id, :value => iteration.id %>
-                <%= f.submit 'Vote!', :disabled => @disabled %>
-            <% end %>
-          </td>
-
-          <td>
-            <%= link_to_function('Copy', "set_text('iteration_value','#{CGI.escapeHTML(iteration.value)}')") %>
-          </td>
-
-          <td>
-            <%= h iteration.iteration_votes.count %>
-          </td>
-        </tr>
-    <% end %>
-  </table>
+<div id="results" class="span-11">
+  <%= render :partial => '_new_results' %>
 </div>
 
+<%= periodically_call_remote(:url => {:action  => :results, :id => @turkee_task.id,
+                                      :partial => 'new_results'}, :frequency => '30') %>
 <div class="span-2">
   <h3><span class="alt">- OR -</span></h3>
 </div>
