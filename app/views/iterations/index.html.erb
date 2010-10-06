@@ -1,20 +1,17 @@
-<div class="span-24">
+<div class="span-24 success">
 
-  <fieldset>
+    <h2>Task Instructions</h2>
 
-    <legend>User Instructions</legend>
     <span class="alt">
       <%= @turkee_task.form_body %>
     </span>
-
-  </fieldset>
 
 </div>
 
 <div class="span-24">
 
   <div id="spinner" style="display:none">
-    <%= image_tag 'spinner.gif' %> Refreshing results.
+    <%= image_tag 'spinner.gif' %> Fetching results from Mechanical Turk.
   </div>
 
   <div id="results" class="span-11">

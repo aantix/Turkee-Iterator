@@ -1,4 +1,4 @@
-<div class="span-24">
+<div class="span-24 success">
   <h2>Directions:</h2>
   <span class="alt">
     <%= @turkee_task.form_body %>
@@ -28,9 +28,9 @@
           </td>
 
           <td>
-            <% turkee_form_for(IterationVote.new, :disable => @disabled) do |f| %>
+            <% turkee_form_for IterationVote.new do |f| %>
                 <%= f.hidden_field :iteration_id, :value => iteration.id %>
-                <%= f.submit 'Vote!' %>
+                <%= f.submit 'Vote!',:disabled => @disabled %>
             <% end %>
           </td>
 
@@ -50,7 +50,7 @@
   <h3><span class="alt">- OR -</span></h3>
 </div>
 
-<div class="span-11 last">
+<div class="span-11 last turkee">
   <h3>Submit your own</h3>
   For a chance to earn an additional bonus, submit your own creation to be voted on.
 
@@ -58,11 +58,11 @@
       <%= f.error_messages %>
 
       <p>
-        <%= f.text_area :value, :disable => @disabled %>
+        <%= f.text_area :value, :disabled => @disabled %>
       </p>
 
       <p>
-        <%= f.submit 'Create', :disable => @disabled %>
+        <%= f.submit 'Create', :disabled => @disabled %>
       </p>
 
   <% end %>

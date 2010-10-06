@@ -2,7 +2,7 @@ class IterationsController < ApplicationController
 
   # Iteration form that allows the Turkers to either vote for a submission or create their own.
   def new
-    @disabled   = (params[:assignmentId] == 'ASSIGNMENT_ID_NOT_AVAILABLE') rescue false
+    @disabled   = Turkee::TurkeeFormHelper::disable_form_fields?(params[:assignmentId])
     params[:id] = Turkee::TurkeeTask.find_by_hit_id(params[:hitId]).id rescue nil
 
     get_results
