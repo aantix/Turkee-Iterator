@@ -1,18 +1,22 @@
 class IterationsController < ApplicationController
 
+  # Iteration form that allows the Turkers to either vote for a submission or create their own.
   def new
+    @disabled   = (params[:assignmentId] == 'ASSIGNMENT_ID_NOT_AVAILABLE') rescue false
     params[:id] = Turkee::TurkeeTask.find_by_hit_id(params[:hitId]).id rescue nil
 
     get_results
     @iteration  = Iteration.new
   end
 
+  # Shows results for a given HIT.  Must pass in :id of associated TurkeeTask.
   def index
     get_results
   end
 
+  # Function that retrieves updated results from Mechanical Turk servers and returns the data
+  #  to be listed on the index page.
   def results
-    logger.info "RESULTS!"
     get_results(true)
 
     render :update do |page|
