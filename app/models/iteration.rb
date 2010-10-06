@@ -3,7 +3,7 @@ class Iteration < ActiveRecord::Base
   has_many :iteration_votes
 
   def approve?
-    (!value.blank? && !turk_task_id.blank)
+    (!value.blank? && !turkee_task_id.blank?)
   end
 
 end
