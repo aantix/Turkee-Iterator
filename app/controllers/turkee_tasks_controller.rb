@@ -14,7 +14,9 @@ class TurkeeTasksController < ApplicationController
     task = Turkee::TurkeeTask.create_hit(host, turkee_task[:hit_title], turkee_task[:hit_description], 'Iteration',
                                          turkee_task[:hit_num_assignments], turkee_task[:hit_reward], turkee_task[:hit_lifetime])
 
-    task.form_body = turkee_task[:form_body]
+    # Fields that were added for the turkee_iterator demo so we update these seperatly
+    task.form_body    = turkee_task[:form_body]
+    task.allow_voting = turkee_task[:allow_voting]
     task.save
 
     seed_data = params[:seed][:data] rescue ''
