@@ -1,15 +1,15 @@
-<h3>Returned Results</h3>
+<h3>User Submissions</h3>
 
 <table width="100%">
   <tr>
     <th>Submission</th>
-    <th># Votes</th>
+    <th><%= @turkee_task.allow_voting? ? "# Votes" : "" %></th>
   </tr>
 
   <% @iterations.each do |iteration| %>
       <tr>
         <td><%= h iteration.value %></td>
-        <td><%= h iteration.iteration_votes.count %></td>
+        <td><%= h iteration.iteration_votes.count if @turkee_task.allow_voting? %></td>
       </tr>
   <% end %>
 </table>
