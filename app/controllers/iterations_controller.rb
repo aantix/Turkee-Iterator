@@ -22,7 +22,7 @@ class IterationsController < ApplicationController
 
     render :update do |page|
       page.show('spinner')
-      page.replace_html 'results', :partial => (params[:partial] || 'results')
+      page.replace_html 'results', :partial => (params[:result_partial] || 'results')
       page.hide('spinner')
     end
   end

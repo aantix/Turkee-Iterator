@@ -18,11 +18,11 @@
 <%= render :partial => 'spinner' %>
 
 <div id="results" class="span-11">
-  <%= render :partial => '_new_results' %>
+  <%= render :partial => 'new_results' %>
 </div>
 
 <%= periodically_call_remote(:url => {:action  => :results, :id => @turkee_task.id,
-                                      :partial => 'new_results'}, :frequency => '30') %>
+                                      :result_partial => 'new_results'}, :frequency => '30') %>
 <div class="span-2">
   <h3><span class="alt">- OR -</span></h3>
 </div>
