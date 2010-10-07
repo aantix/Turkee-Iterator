@@ -46,19 +46,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_results.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_results.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/iterations/_results.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0788609">
+            <state line="4" column="18" selection-start="73" selection-end="73" vertical-scroll-proportion="-1.4117647">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="40" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-7.0588236">
+            <state line="29" column="45" selection-start="745" selection-end="745" vertical-scroll-proportion="0.17743702">
               <folding />
             </state>
           </provider>
@@ -156,9 +156,9 @@
         <option value="$PROJECT_DIR$/app/controllers/iterations_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/iteration_vote.rb" />
         <option value="$PROJECT_DIR$/config/initializers/turk_task_config.rb" />
-        <option value="$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/iterations/_new_results.html.erb" />
         <option value="$PROJECT_DIR$/app/views/iterations/_results.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb" />
       </list>
     </option>
   </component>
@@ -585,13 +585,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="40" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-7.0588236">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/iterations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="38" selection-start="405" selection-end="405" vertical-scroll-proportion="-6.352941">
@@ -622,7 +615,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/iterations/_results.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0788609">
+        <state line="4" column="18" selection-start="73" selection-end="73" vertical-scroll-proportion="-1.4117647">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="45" selection-start="745" selection-end="745" vertical-scroll-proportion="0.17743702">
           <folding />
         </state>
       </provider>
