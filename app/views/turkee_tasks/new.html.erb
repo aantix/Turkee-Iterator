@@ -39,6 +39,9 @@
           <%= f.label :allow_voting %>
           <br/>
           <%= f.check_box :allow_voting %>
+          <br/>
+
+          * If voting allowed, <%= f.check_box :returk %> returk top <%= f.text_field :returk_top_x %> items?
         </li>
       </ol>
 

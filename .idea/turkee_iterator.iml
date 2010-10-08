@@ -27,6 +27,7 @@
         <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" git="false" doRequire="true" />
       </requirement>
       <source from="config/boot.rb" />
+      <source from="console/config/boot.rb" />
     </requirement>
     <requirement>
       <requirement>

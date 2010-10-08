@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101007163700) do
+ActiveRecord::Schema.define(:version => 20101008072119) do
 
   create_table "iteration_votes", :force => true do |t|
     t.integer  "iteration_id"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20101007163700) do
   create_table "turkee_tasks", :force => true do |t|
     t.string   "hit_url"
     t.boolean  "sandbox"
+    t.integer  "task_id"
     t.string   "task_type"
     t.text     "hit_title"
     t.text     "hit_description"
@@ -48,6 +49,9 @@ ActiveRecord::Schema.define(:version => 20101007163700) do
     t.datetime "updated_at"
     t.string   "form_body"
     t.boolean  "allow_voting",                                       :default => true
+    t.boolean  "returk"
+    t.integer  "returk_top_x"
+    t.integer  "parent_id"
   end
 
 end
