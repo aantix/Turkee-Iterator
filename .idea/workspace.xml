@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21f7ac6b-44f9-41fe-be0f-e64a0a1eb8d9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20101008072119_add_parent_id_to_turkee_tasks.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/turkee_iterator.iml" afterPath="$PROJECT_DIR$/.idea/turkee_iterator.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/turkee_tasks_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/iteration.rb" afterPath="$PROJECT_DIR$/app/models/iteration.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/iterations/_results.html.erb" afterPath="$PROJECT_DIR$/app/views/iterations/_results.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/iterations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/iterations/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb" afterPath="$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20100930143221_create_iterations.rb" afterPath="$PROJECT_DIR$/db/migrate/20100930143221_create_iterations.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="turkee_iterator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +39,7 @@
       <file leaf-file-name="README.rdoc" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rdoc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="599" selection-end="599" vertical-scroll-proportion="-1.5564784">
+            <state line="14" column="20" selection-start="956" selection-end="956" vertical-scroll-proportion="-1.6511627">
               <folding />
             </state>
           </provider>
@@ -558,7 +547,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="599" selection-end="599" vertical-scroll-proportion="-1.5564784">
+        <state line="14" column="20" selection-start="956" selection-end="956" vertical-scroll-proportion="-1.6511627">
           <folding />
         </state>
       </provider>
