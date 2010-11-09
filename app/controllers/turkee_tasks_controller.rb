@@ -10,7 +10,6 @@ class TurkeeTasksController < ApplicationController
     seed_data   = params[:seed][:data] rescue ''
 
     host        = Util.host_url(request.referer)
-
     task        = Iteration.create_hit(host, turkee_task, seed_data)
 
     flash[:notice] = 'HIT was successfully created.'

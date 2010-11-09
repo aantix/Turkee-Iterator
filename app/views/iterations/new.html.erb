@@ -15,10 +15,14 @@
 
 <hr class="space">
 
+<%# Print out the last X number of Iterations here. %>
+<%# %>
+
+<hr class="space">
 <%= render :partial => 'spinner' %>
 
 <div id="results" class="span-11">
-  <%= render :partial => 'new_results' %>
+  <%= render(:partial => 'new_results') if @iterations.size > 0 %>
 </div>
 
 <%= periodically_call_remote(:url => {:action  => :results, :id => @turkee_task.id,
@@ -37,6 +41,8 @@
 
   <% turkee_form_for(@iteration, @assignment_id) do |f| %>
       <%= f.hidden_field :turkee_task_id, :value => @turkee_task.id %>
+      <%= f.hidden_field :parent_id, :value => @turkee_task.parent_id %>
+
       <p><%= f.text_area :value, :disabled => @disabled %></p>
       <p><%= f.submit 'Create', :disabled => @disabled %></p>
   <% end %>

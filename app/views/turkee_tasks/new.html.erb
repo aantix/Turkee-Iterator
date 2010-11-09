@@ -38,10 +38,13 @@
         <li>
           <%= f.label :allow_voting %>
           <br/>
-          <%= f.check_box :allow_voting %>
+          <%= f.check_box :allow_voting, :onclick => "Element('turkee_turkee_task[returk_top_x]').enable; Element('turkee_turkee_task[returk]').enable; " %>
+        </li>
+        <li>
+          <%= f.label :returk, 'Returk Results?' %>
           <br/>
-
-          * If voting allowed, <%= f.check_box :returk %> returk top <%= f.text_field :returk_top_x %> items?
+          <%= f.check_box :returk %><br/>
+          Take top <%= f.text_field :returk_top_x, :max => 2 %> items.
         </li>
       </ol>
 
@@ -67,6 +70,9 @@
     <li>The amount of money the Turker will be awarded for completing the task.</li>
     <li>Number of Turkers that can perform this HIT.</li>
     <li>The number of days the HIT will be valid.</li>
+    <li>Allow for previously submitted entries to be voted on by other turkers?</li>
+    <li>When the HIT is complete, take the top results and create a new HIT with those entries as seeds?</li>
   </ol>
+  ** <b>Seed data</b> : Start the HIT off with a single data point for other turkers to build off of.
 
 </div>

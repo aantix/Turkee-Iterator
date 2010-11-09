@@ -1,4 +1,6 @@
 class Iteration < ActiveRecord::Base
+  acts_as_tree :foreign_key => "parent_id"
+
   belongs_to :turkee_task, :class_name => 'Turkee::TurkeeTask'
   has_many :iteration_votes
 
@@ -11,20 +13,14 @@ class Iteration < ActiveRecord::Base
   end
 
   def self.create_hit(host, turkee_task, seed_data)
-
-    Iteration.create_hit(host, turkee_task[:hit_title],
-                         turkee_task[:hit_description],
-                         turkee_task[:hit_num_assignments],
-                         turkee_task[:hit_reward], turkee_task[:hit_lifetime], seed_data)
-  end
-
-  def self.create_hit(host, hit_title, hit_description, hit_num_assignments, hit_reward, hit_lifetime, seed_data)
     task = Turkee::TurkeeTask.create_hit(host, turkee_task[:hit_title], turkee_task[:hit_description], 'Iteration',
                                          turkee_task[:hit_num_assignments], turkee_task[:hit_reward], turkee_task[:hit_lifetime])
 
     # Fields that were added for the turkee_iterator demo so we update these seperatly
     task.form_body    = turkee_task[:form_body]
     task.allow_voting = turkee_task[:allow_voting]
+    task.returk       = turkee_task[:returk]
+    task.returk_top_x = turkee_task[:returk_top_x]
     task.save
 
     Iteration.create(:value => seed_data, :turkee_task_id => task.id) unless seed_data.blank?
@@ -35,11 +31,12 @@ class Iteration < ActiveRecord::Base
     if turkee_task.returk?
       # Get the top X iterations by votes
       # turkee_task.internal_images.sort_by(&:position)
-      iterations = Iteration.find_all_by_turkee_task_id(@turkee_task.id).sort_by(&:iteration_votes_count).reverse
+      iterations     = Iteration.find_all_by_turkee_task_id(@turkee_task.id).sort_by(&:iteration_votes_count).reverse
       top_iterations = iterations[0..turkee_task.return_top_x - 1]
 
       top_iterations.each do |iteration|
         parent_task = iteration.turkee_task
+
         host = Util.host_url(parent_task.form_url)
         task = create_hit(host, parent_task.hit_title, parent_task.hit_description, parent_task.hit_num_assignments,
                           parent_task.hit_reward, parent_task.hit_lifetime, storyline(iteration.value))

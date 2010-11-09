@@ -1,77 +1,85 @@
 == Description
 
-TurkeeIterator is a demo that explores iterative content development using Mechanical Turk.
-This method is outlined in the paper _TurKit: Tools for Iterative Tasks on Mechanical Turk_
-http://glittle.org/Papers/TurKit.pdf
+TurkeeIterator is a demo that explores iterative content development using the Turkee {Turkee}[https://github.com/aantix/turkee] gem.
+This method is outlined in the paper {TurKit: Tools for Iterative Tasks on Mechanical Turk}[http://glittle.org/Papers/TurKit.pdf]
 
 == Setup
-* You need to deploy this application to a production server.  The Mechanical Turkers need to be able to access this application so it must be deployed to a shared host/VPS/etc.
+1) You need to deploy this application to a production server.  The Mechanical Turkers need to be able to access this application so it must be deployed to a shared host/VPS/etc.
 
-* Access the server at it's deployed location and you should see a form that has you enter the parameters to create a new HIT.
+2) Access the server at it's deployed location and you should see a form that has you enter the parameters to create a new HIT.
 
 
 == Example Scenarios
+Go to the following URL and enter some of the following sample Turkee scenarios to demonstrate the power of Mechanical Turk.
+{https://www.yourapplication.com/turkee_tasks/new}[https://www.yourapplication.com/turkee_tasks/new]
 
 == Simple Gather Responses from Mechanical Turk
-* Please say "Hello" to my colleagues and tell us where you're from.
+1) Please say "Hello" to my colleagues and tell us where you're from.
 
-* I am demo'ing Mechanical Turk to my colleagues.  Please tell send us a creative "hello" and where you're from.
+2) I am demo'ing Mechanical Turk to my colleagues.  Please tell send us a creative "hello" and where you're from.
 
-* A one or two line introduction would be nice.  Tell us how the weather is in your city.  Tell us about your family.  Or just simply say hello.
+3) A one or two line introduction would be nice.  Tell us how the weather is in your city.  Tell us about your family.  Or just simply say hello.
 
-* 0.05
+4) 0.05
 
-* 100
+5) 100
 
-* 5
+6) 5
 
-* It's mostly sunny at 65 degrees. Hello from San Mateo, CA!
+7) Uncheck "Allow voting"
 
+8) Uncheck "Returk Results?"
 
-Example 2, The Best One Liner: Voting and Revisions to Prev Examples
-===================================================================
+Seed Data:
+It's mostly sunny at 65 degrees. Hello from San Mateo, CA!
 
-* Is this line funny?
+== Example 2; The Best One Liner: Voting and Revisions to Prev Examples
+1) Is this line funny?
 
-* I love jokes and I especially love "one liners" that you often hear in movies such as _Airplane!_ or _The Naked Gun_.  Here's a favorite of mine :
+2) I love jokes and I especially love "one liners" that you often hear in movies such as _Airplane!_ or _The Naked Gun_.  Here's a favorite of mine :
 
 "Like a blind man in an orgy, I was going to have to feel my way around."
 
 Read the one-liner(s) below, and if you think it is funny, click the "vote" button.  If you do not think it is funny, submit your own one-liner for a chance to win $1.00 bonus if your one liner is selected.
 
-*  Either click "vote" next to the line that you think is funniest, or submit your own to win a $1.00 bonus. You can use other people's jokes, change them slightly, and create new one liner (just click the "copy" link).
+3) Either click "vote" next to the line that you think is funniest, or submit your own to win a $1.00 bonus. You can use other people's jokes, change them slightly, and create new one liner (just click the "copy" link).
 
-* 0.05
+4) 0.05
 
-* 100
+5) 100
 
-* 5
+6) 5
 
-* Like a midget at a urinal, I was going to have to stay on my toes.
+7) Check "Allow voting"
 
+8) Uncheck "Returk Results?"
+
+Seed Data:
+Like a midget at a urinal, I was going to have to stay on my toes.
 
 ==Sample 3, A Feed Forward Iterative Sample with Mutlple Branches
- * What... Happens... Next?  Murder and intrigue.
+1) What... Happens... Next?  Murder and intrigue.
 
- * I've outlined a given scenario, write a few sentences that tells what happens next
+2) Here's the start of the story :
 
- * A man walks into a bar wearing a ski mask, holds a gun in the air and screams, "Empty your pockets or I empty my gun! Your choice!"
+"A man walks into a bar wearing a ski mask, holds a gun in the air and screams, 'Empty your pockets or I empty my gun! Your choice!'
+The patrons scramble to the floor. Faint whimpers can be heard all around while the customers pressed their faces tightly to the floor hoping their tears are not heard."
 
-  The patrons scramble to the floor. Faint whimpers can be heard all around while the customers pressed their faces tightly to the floor hoping their tears are not heard.
+Write a few sentences that tells what happens next.
 
-  Either click "vote" next to the submission that you think is the best, or submit your own to win a $1.00 bonus. You can use other people's submissions, make them better, and create your own story submission (just click the "copy" link).
+3) Either click "vote" next to the submission that you think is the best, or submit your own storyline for a chance to win an extra $1.00 bonus. You can use other people's submissions, make them better, and create your own story submission (just click the "copy" link).
 
- * 0.05
+4) 0.05
 
- * 100
+5) 100
 
- * 5
+6) 5
+
+7) Check "Allow voting"
+
+8) Check "Returk Results?" and take the top _3_ items.
 
 No Seed Data
-
-Check allow voting
-
-Check returk and take the top 3 submissions
 
 == Copyright
 
