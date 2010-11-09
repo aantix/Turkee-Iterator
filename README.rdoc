@@ -12,81 +12,81 @@ This method is outlined in the paper {TurKit: Tools for Iterative Tasks on Mecha
 3) For the samples below, the numbered data points represent the value you should enter for the corresponding field at {https://www.yourapplication.com/turkee_tasks/new}[https://www.yourapplication.com/turkee_tasks/new].
 
 == Example 1; Simple Gather Responses from Mechanical Turk
-    1) Please say "hello" to my colleagues and tell us where you're from.
+1) Please say "hello" to my colleagues and tell us where you're from.
 
-    2) I am demo'ing Mechanical Turk to my colleagues.  Please tell send us a creative "hello" and where you're from.
+2) I am demo'ing Mechanical Turk to my colleagues.  Please tell send us a creative "hello" and where you're from.
 
-    3) A one or two line introduction would be nice.  Tell us how the weather is in your city.  Tell us about your family.  Or just simply say hello.
+3) A one or two line introduction would be nice.  Tell us how the weather is in your city.  Tell us about your family.  Or just simply say hello.
 
-    4) 0.05
+4) 0.05
 
-    5) 100
+5) 100
 
-    6) 5
+6) 5
 
-    7) Uncheck "Allow voting"
+7) Uncheck "Allow voting"
 
-    8) Uncheck "Returk Results?"
+8) Uncheck "Returk Results?"
 
-    Seed Data:
-    It's mostly sunny at 65 degrees. Hello from San Mateo, CA!
+Seed Data:
+It's mostly sunny at 65 degrees. Hello from San Mateo, CA!
 
 == Example 2; The Best One Liner: Voting and Revisions to Prev Examples
-    1) Is this line funny?
+1) Is this line funny?
 
-    2) I love jokes and I especially love "one liners" that you often hear in movies such as _Airplane!_ or _The Naked Gun_.  Here's a favorite of mine :
+2) I love jokes and I especially love "one liners" that you often hear in movies such as _Airplane!_ or _The Naked Gun_.  Here's a favorite of mine :
 
-    "Like a blind man in an orgy, I was going to have to feel my way around."
+"Like a blind man in an orgy, I was going to have to feel my way around."
 
-    Read the one-liner(s) below, and if you think it is funny, click the "vote" button.  If you do not think it is funny, submit your own one-liner for a chance to win $1.00 bonus if your one liner is selected.
+Read the one-liner(s) below, and if you think it is funny, click the "vote" button.  If you do not think it is funny, submit your own one-liner for a chance to win $1.00 bonus if your one liner is selected.
 
-    3) Either click "vote" next to the line that you think is funniest, or submit your own to win a $1.00 bonus. You can use other people's jokes, change them slightly, and create new one liner (just click the "copy" link).
+3) Either click "vote" next to the line that you think is funniest, or submit your own to win a $1.00 bonus. You can use other people's jokes, change them slightly, and create new one liner (just click the "copy" link).
 
-    4) 0.05
+4) 0.05
 
-    5) 100
+5) 100
 
-    6) 5
+6) 5
 
-    7) Check "Allow voting"
+7) Check "Allow voting"
 
-    8) Uncheck "Returk Results?"
+8) Uncheck "Returk Results?"
 
-    Seed Data:
-    Like a midget at a urinal, I was going to have to stay on my toes.
+Seed Data:
+Like a midget at a urinal, I was going to have to stay on my toes.
 
 ==Sample 3, A Feed Forward Iterative Sample with Mutlple Branches
-    1) What... Happens... Next?  Murder and intrigue.
+1) What... Happens... Next?  Murder and intrigue.
 
-    2) Here's the start of the story :
+2) Here's the start of the story :
 
-    "A man walks into a bar wearing a ski mask, holds a gun in the air and screams, 'Empty your pockets or I empty my gun! Your choice!'
-    The patrons scramble to the floor. Faint whimpers can be heard all around while the customers pressed their faces tightly to the floor hoping their tears are not heard."
+"A man walks into a bar wearing a ski mask, holds a gun in the air and screams, 'Empty your pockets or I empty my gun! Your choice!'
+The patrons scramble to the floor. Faint whimpers can be heard all around while the customers pressed their faces tightly to the floor hoping their tears are not heard."
 
-    Write a few sentences that tells what happens next.
+Write a few sentences that tells what happens next.
 
-    3) Either click "vote" next to the submission that you think is the best, or submit your own storyline for a chance to win an extra $1.00 bonus. You can use other people's submissions, make them better, and create your own story submission (just click the "copy" link).
+3) Either click "vote" next to the submission that you think is the best, or submit your own storyline for a chance to win an extra $1.00 bonus. You can use other people's submissions, make them better, and create your own story submission (just click the "copy" link).
 
-    4) 0.05
+4) 0.05
 
-    5) 100
+5) 100
 
-    6) 5
+6) 5
 
-    7) Check "Allow voting"
+7) Check "Allow voting"
 
-    8) Check "Returk Results?" and take the top _3_ items.
+8) Check "Returk Results?" and take the top _3_ items.
 
-    No Seed Data
+No Seed Data
 
-==Sample Output
-** Here's a few screenshots from a sample run I did using example 2.
+==My Sample Data
+Here are a few screenshots from a sample run I did using example 2.
 
-    1) {The initial parameters for setting up my Turkee task}[http://imgur.com/13rCM.png]
+1) {The initial parameters for setting up my Turkee task}[http://imgur.com/13rCM.png]
 
-    2) {Responses I received from the Turkers}[http://imgur.com/ghveH.png]
+2) {Responses I received from the Turkers}[http://imgur.com/ghveH.png]
 
-    3) {The form that was presented to the Turkers (either vote or submit a joke)}[http://imgur.com/229uc.png]
+3) {The form that was presented to the Turkers (either vote or submit a joke)}[http://imgur.com/229uc.png]
 
 == Copyright
 
