@@ -82,11 +82,11 @@ No Seed Data
 ==My Sample Data
 Here are a few screenshots from a sample run I did using example 2.
 
-1) {The initial parameters for setting up my Turkee task}[http://imgur.com/13rCM.png]
+1) {The initial parameters for setting up my Turkee task}[http://imgur.com/13rCM/]
 
-2) {Responses I received from the Turkers}[http://imgur.com/ghveH.png]
+2) {Responses I received from the Turkers}[http://imgur.com/ghveH/]
 
-3) {The form that was presented to the Turkers (either vote or submit a joke)}[http://imgur.com/229uc.png]
+3) {The form that was presented to the Turkers (either vote or submit a joke)}[http://imgur.com/229uc/]
 
 == Copyright
 
