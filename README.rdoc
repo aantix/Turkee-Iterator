@@ -9,7 +9,7 @@ This method is outlined in the paper {TurKit: Tools for Iterative Tasks on Mecha
 2) Go to the following URL :
 {https://www.deployedapplication.com/turkee_tasks/new}[https://www.deployedapplication.com/turkee_tasks/new]
 
-3) For the samples below, the numbered data points represent the value you should enter for the corresponding field at {https://www.yourapplication.com/turkee_tasks/new}[https://www.yourapplication.com/turkee_tasks/new].
+3) For the samples below, the numbered data points represent the value you should enter for the corresponding form fields at {https://www.yourapplication.com/turkee_tasks/new}[https://www.yourapplication.com/turkee_tasks/new].
 
 == Example 1; Simple Gather Responses from Mechanical Turk
 1) Please say "hello" to my colleagues and tell us where you're from.
