@@ -23,7 +23,7 @@ Rails::Initializer.run do |config|
   config.gem 'turkee'
   config.gem 'acts_as_tree'
   #config.gem 'has_enumeration'
-  config.gem 'differ'
+  #config.gem 'differ'
 
   # config.gem "bj"
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
