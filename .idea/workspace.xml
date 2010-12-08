@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21f7ac6b-44f9-41fe-be0f-e64a0a1eb8d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/turkee_iterator.iml" afterPath="$PROJECT_DIR$/.idea/turkee_iterator.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/iteration.rb" afterPath="$PROJECT_DIR$/app/models/iteration.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb" afterPath="$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/util.rb" afterPath="$PROJECT_DIR$/lib/util.rb" />
     </list>
     <ignored path="turkee_iterator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,25 +89,16 @@
       <file leaf-file-name="iteration.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/iteration.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="68" selection-start="1922" selection-end="1922" vertical-scroll-proportion="-15.148149">
+            <state line="31" column="22" selection-start="1094" selection-end="1094" vertical-scroll-proportion="-2.5555556">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environment.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="14" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.33333334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="util.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="util.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/util.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="11" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.7407407">
+            <state line="3" column="69" selection-start="139" selection-end="139" vertical-scroll-proportion="0.14285715">
               <folding />
             </state>
           </provider>
@@ -151,7 +142,6 @@
         <option value="$PROJECT_DIR$/config/initializers/turk_task_config.rb" />
         <option value="$PROJECT_DIR$/app/views/iterations/_new_results.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20101008064717_add_returk_to_turkee_tasks.rb" />
-        <option value="$PROJECT_DIR$/lib/util.rb" />
         <option value="$PROJECT_DIR$/app/models/iteration_vote.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20100903132754_create_turkee_tasks.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20100930143221_create_iterations.rb" />
@@ -163,6 +153,7 @@
         <option value="$PROJECT_DIR$/app/views/turkee_tasks/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/iteration.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
+        <option value="$PROJECT_DIR$/lib/util.rb" />
       </list>
     </option>
   </component>
@@ -560,11 +551,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.rdoc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="515" selection-end="515" vertical-scroll-proportion="0.20493066" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20100930143221_create_iterations.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="236" selection-end="236" vertical-scroll-proportion="0.42296073">
@@ -633,13 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/iteration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="68" selection-start="1922" selection-end="1922" vertical-scroll-proportion="-15.148149">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="7" selection-start="180" selection-end="180" vertical-scroll-proportion="0.2857143">
@@ -654,16 +633,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/util.rb">
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="22" selection-end="22" vertical-scroll-proportion="-0.7407407">
+        <state line="24" column="14" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/iteration.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="14" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.33333334">
+        <state line="31" column="22" selection-start="1094" selection-end="1094" vertical-scroll-proportion="-2.5555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/ruby/1.8/uri/common.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="482" column="11" selection-start="14717" selection-end="14717" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/util.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="69" selection-start="139" selection-end="139" vertical-scroll-proportion="0.14285715">
           <folding />
         </state>
       </provider>
