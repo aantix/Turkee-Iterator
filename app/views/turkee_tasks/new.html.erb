@@ -22,29 +22,32 @@
         </li>
         <li>
           <%= f.label :hit_reward %>
-          <br/>
-          $<%= f.text_field :hit_reward %>
+          $<%= f.text_field :hit_reward, :size => 5 %>
         </li>
         <li>
           <%= f.label :hit_num_assignments %>
-          <br/>
-          <%= f.text_field :hit_num_assignments %>
+          <%= f.text_field :hit_num_assignments, :size => 5 %>
         </li>
         <li>
           <%= f.label :hit_lifetime %>
-          <br/>
-          <%= f.text_field :hit_lifetime %>
+          <%= f.text_field :hit_lifetime, :size => 5 %>
         </li>
         <li>
           <%= f.label :allow_voting %>
-          <br/>
-          <%= f.check_box :allow_voting, :onclick => "Element('turkee_turkee_task[returk_top_x]').enable; Element('turkee_turkee_task[returk]').enable; " %>
+          <%= f.check_box :allow_voting %><p/>
         </li>
         <li>
           <%= f.label :returk, 'Returk Results?' %>
-          <br/>
-          <%= f.check_box :returk %><br/>
-          Take top <%= f.text_field :returk_top_x, :max => 2 %> items.
+          <%= f.check_box :returk, :onclick => "$('returk_section').toggle('slide');" %><br/>
+
+          <div id="returk_section" style="display:none">
+              Take top <%= f.text_field :returk_top_x, :size => 2 %> items.
+              <br/>
+              <%= f.label :returk_form_body, 'Instructions for all subsequent HITs (displayed on form).  Local variable of \'iteration\' represents value from previous HIT.' %>
+              <br/>
+              <%= f.text_area :returk_form_body %>
+          </div>
+
         </li>
       </ol>
 
