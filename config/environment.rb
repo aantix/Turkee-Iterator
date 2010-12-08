@@ -22,7 +22,7 @@ Rails::Initializer.run do |config|
   config.gem 'rturk'
   config.gem 'turkee'
   config.gem 'acts_as_tree'
-  config.gem 'has_enumeration'
+  #config.gem 'has_enumeration'
   config.gem 'differ'
 
   # config.gem "bj"

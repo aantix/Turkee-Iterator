@@ -40,8 +40,6 @@ class Iteration < ActiveRecord::Base
     task.returk_top_x = parent_turkee_task.returk_top_x
     task.parent_id    = parent_turkee_task.id
     task.save
-
-    Iteration.create(:value => seed_data, :turkee_task_id => task.id) unless seed_data.blank?
     task
   end
 
