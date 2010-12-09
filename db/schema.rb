@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101123000429) do
+ActiveRecord::Schema.define(:version => 20101208100827) do
 
   create_table "iteration_votes", :force => true do |t|
     t.integer  "iteration_id"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20101123000429) do
     t.integer  "returk_top_x"
     t.integer  "parent_id"
     t.string   "returk_form_body"
+    t.boolean  "display_submissions",                                :default => true
   end
 
 end

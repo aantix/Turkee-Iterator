@@ -8,30 +8,26 @@
 
 <div class="span-24 success">
   <h2>Directions:</h2>
-  <span class="alt">
-    <%= @turkee_task.form_body %>
-  </span>
+  <%= simple_format(@turkee_task.form_body, :class => 'large') %>
 </div>
 
 <hr class="space">
 
-<%# Print out the last X number of Iterations here. %>
-<%# %>
-
-<hr class="space">
 <%= render :partial => 'spinner' %>
 
-<div id="results" class="span-11">
-  <%= render(:partial => 'new_results') if @iterations.size > 0 %>
-</div>
+<% if @turkee_task.display_submissions? %>
+    <div id="results" class="span-11">
+      <%= render(:partial => 'new_results') %>
+    </div>
 
-<%= periodically_call_remote(:url => {:action  => :results, :id => @turkee_task.id,
-                                      :result_partial => 'new_results'}, :frequency => '30') %>
-<div class="span-2">
-  <% if @turkee_task.allow_voting? %>
-    <h3><span class="alt">- OR -</span></h3>
-  <% end %>
-</div>
+    <%= periodically_call_remote(:url => {:action  => :results, :id => @turkee_task.id,
+                                          :result_partial => 'new_results'}, :frequency => '30') %>
+    <div class="span-2">
+      <% if @turkee_task.allow_voting? %>
+        <h3><span class="alt">- OR -</span></h3>
+      <% end %>
+    </div>
+<% end %>
 
 <div class="span-11 last turkee">
   <h3>Submit entry</h3>

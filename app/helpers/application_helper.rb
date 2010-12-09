@@ -5,6 +5,7 @@ module ApplicationHelper
   # http://snippets.dzone.com/tag/acts_as_tree
   #
   def tree_ul(acts_as_tree_set, init=true, &block)
+
     if acts_as_tree_set.size > 0
       ret = '<ul>'
       acts_as_tree_set.collect do |item|

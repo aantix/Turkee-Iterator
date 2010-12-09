@@ -1,6 +1,6 @@
 class AddAllowVotingToTurkeeTasks < ActiveRecord::Migration
   def self.up
-    add_column :turkee_tasks, :allow_voting, :boolean, :default => true
+    add_column :turkee_tasks, :allow_voting, :boolean, :default => false
   end
 
   def self.down

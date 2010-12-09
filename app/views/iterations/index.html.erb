@@ -1,14 +1,12 @@
 <div class="span-24 success">
 
-    <h2>Task Instructions</h2>
+    <h2>Directions:</h2>
 
-    <span class="alt">
-      <%= @turkee_task.form_body %>
-    </span>
+    <%= simple_format(@turkee_task.form_body, :class => 'large') %>
 
     <hr class="space">
 
-    Link: <%= link_to(truncate(@turkee_task.hit_url,:length => 30, :omission => '...'), @turkee_task.hit_url) %>
+    Link: <%= link_to(truncate(@turkee_task.hit_url,:length => 60, :omission => '...'), @turkee_task.hit_url) %>
 
 </div>
 
