@@ -48,12 +48,12 @@ ActiveRecord::Schema.define(:version => 20101208100827) do
     t.boolean  "complete"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "form_body"
+    t.text     "form_body"
     t.boolean  "allow_voting",                                       :default => true
     t.boolean  "returk",                                             :default => false
     t.integer  "returk_top_x"
     t.integer  "parent_id"
-    t.string   "returk_form_body"
+    t.text   "returk_form_body"
     t.boolean  "display_submissions",                                :default => true
   end
 
