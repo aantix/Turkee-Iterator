@@ -1,3 +1,6 @@
+require "bundler"
+Bundler.setup
+
 # Be sure to restart your server when you modify this file
 
 # Specifies gem version of Rails to use when vendor/rails is not present
@@ -19,9 +22,9 @@ Rails::Initializer.run do |config|
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
 
   # Specify gems that this application depends on and have them installed with rake gems:install
-  config.gem 'rturk'
-  config.gem 'turkee'
-  config.gem 'acts_as_tree'
+  # config.gem 'rturk'
+  # config.gem 'turkee'
+  # config.gem 'acts_as_tree'
   #config.gem 'has_enumeration'
   #config.gem 'differ'
 

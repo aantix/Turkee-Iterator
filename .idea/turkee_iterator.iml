@@ -54,6 +54,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.10, /Users/jjones/.gem/ruby/1.8/gems/bundler-1.0.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rails (vversion, /Users/jjones/Projects/rails) from path" level="application" />
   </component>
 </module>
 
