@@ -1,7 +1,7 @@
 == Description
 
 TurkeeIterator is a demo that explores iterative content development using the {Turkee}[https://github.com/aantix/turkee] gem.
-This method is outlined in the paper {TurKit: Tools for Iterative Tasks on Mechanical Turk}[http://glittle.org/Papers/TurKit.pdf]
+This method is outlined in the paper {TurKit: Tools for Iterative Tasks on Mechanical Turk}[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.179.882&rep=rep1&type=pdf]
 
 == Setup
 1) You need to deploy this application to a production server.  The Mechanical Turk workers (a.k.a., "turkers") need to be able to access this application to enter data so it must be deployed to a public shared-host/VPS/server/etc.
